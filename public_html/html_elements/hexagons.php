@@ -27,7 +27,7 @@ If we make each side of the hexagon length r (the hypotenuse) then we can calcul
     <?php
 
     $imageLocations = ['assets/img/stock/stockIm1.min.png'];
-    for($i = 0; $i < 13; $i++){
+    for($i = 0; $i < 18; $i++){
         echo "<image xlink:href='" . $imageLocations[0] . "' clip-path='url(#hexClip)' class='svgHex' id='hex" . $i . "'></image>";
     }
 

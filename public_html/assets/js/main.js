@@ -4,7 +4,7 @@ var ADJACENT = Math.sqrt(3)/2;  // used for calculating size of side adjacent to
 var OPPOSITE = 0.5;             // used for calculating size of side opposite to 30degree angle
 
 var NUM_COL = 3;                // The number of hexagons in the largest column
-var NUM_HEX = 13;               // Total number of hexagons
+var NUM_HEX = 18;               // Total number of hexagons
 var SPACER = 15;                // Spacer between each hexagon
 
 var HEX_SIDE_LENGTH;
@@ -21,7 +21,7 @@ var windowWidth;
 function resizeEvent() {
     windowWidth = $(this).width();
     windowHeight = $(this).height();
-    HEX_SIDE_LENGTH = Math.floor(windowWidth/6);
+    HEX_SIDE_LENGTH = Math.floor(windowWidth/9);
     HEX_WIDTH = HEX_SIDE_LENGTH + 2*HEX_SIDE_LENGTH*OPPOSITE;
     HEX_HEIGHT = 2*HEX_SIDE_LENGTH*ADJACENT;
 
