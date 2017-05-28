@@ -1,11 +1,15 @@
 
 
+
+
+/******************************************** HEXAGON SCALING + GRID **************************************************/
+
 var ADJACENT = Math.sqrt(3)/2;  // used for calculating size of side adjacent to 30degree angle
 var OPPOSITE = 0.5;             // used for calculating size of side opposite to 30degree angle
 
 var NUM_COL = 3;                // The number of hexagons in the largest column
 var NUM_HEX = 18;               // Total number of hexagons
-var SPACER = 15;                // Spacer between each hexagon
+var SPACER = 7;                 // Spacer between each hexagon
 
 var HEX_SIDE_LENGTH;
 var HEX_WIDTH;
@@ -13,8 +17,6 @@ var HEX_HEIGHT;
 
 var windowHeight;
 var windowWidth;
-
-
 
 
 
@@ -29,7 +31,6 @@ function resizeEvent() {
         (HEX_WIDTH) + "," + (HEX_SIDE_LENGTH*ADJACENT) + " " +
         (HEX_SIDE_LENGTH + HEX_SIDE_LENGTH*OPPOSITE) + "," + (HEX_HEIGHT) + " " +
         (HEX_SIDE_LENGTH*OPPOSITE) + "," + (HEX_HEIGHT) + " 0," + (HEX_SIDE_LENGTH*ADJACENT);
-
 
 
     $('.hexagon').attr('points', points);
@@ -47,14 +48,14 @@ function resizeEvent() {
 
             if(secondRow){
                 $(hexId).attr({
-                    width: 1000,
-                    height: 1000,
+                    width: 500, //todo: i'm pretty sure these need to be specifically set
+                    height: 500,
                     transform: "translate(" + (pos * (HEX_WIDTH+HEX_SIDE_LENGTH + SPACER) - HEX_WIDTH/2) + "," + (i*(HEX_HEIGHT + SPACER) - HEX_HEIGHT/2) + ")"
                 });
             } else {
                 $(hexId).attr({
-                    width: 600,
-                    height: 600,
+                    width: 500,
+                    height: 500,
 
                     transform: "translate(" + (pos * (HEX_WIDTH+HEX_SIDE_LENGTH + SPACER) + HEX_WIDTH/2 +HEX_SIDE_LENGTH/2 + SPACER/2 - HEX_WIDTH/2)
                                             + ","
@@ -62,46 +63,12 @@ function resizeEvent() {
                 });
             }
 
-
-
             cur += 2*NUM_COL - 1;
         }
     }
-
-
-
-    // var hexId;
-
-
-    /*
-    for(var i = 0; i < NUM_HEX; i++){
-        hexId = '#hex' + i;
-
-
-
-        $(hexId).attr({
-            width: 600,
-            height: 600,
-            transform: "translate(" + (50*i) + ", 0)"
-        });
-    }
-    */
-
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-// Whenever a window is resized we need to update the sizes of the triangles (for responsiveness)
+// Whenever a window is resized we need to update the sizes of the hexagons.
 $(function jQueryResize (){
     $(window).resize(function(){
         resizeEvent();
