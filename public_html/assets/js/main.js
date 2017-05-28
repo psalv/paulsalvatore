@@ -21,7 +21,7 @@ var windowWidth;
 function resizeEvent() {
     windowWidth = $(this).width();
     windowHeight = $(this).height();
-    HEX_SIDE_LENGTH = Math.floor(windowWidth/8);
+    HEX_SIDE_LENGTH = Math.floor(windowWidth/6);
     HEX_WIDTH = HEX_SIDE_LENGTH + 2*HEX_SIDE_LENGTH*OPPOSITE;
     HEX_HEIGHT = 2*HEX_SIDE_LENGTH*ADJACENT;
 
@@ -34,22 +34,33 @@ function resizeEvent() {
 
     $('.hexagon').attr('points', points);
 
-    var secondRow = 0;
+    var secondRow;
     var hexId;
     var pos;
     for(var i = 0; i < 2*NUM_COL - 1; i++){
         var cur = i;
-        secondRow = i < NUM_COL ? 0 : 0.5;
+        secondRow = i < NUM_COL;
 
         while(cur < NUM_HEX){
             hexId = '#hex' + cur;
             pos = Math.floor(cur/(2*NUM_COL - 1));
 
-            $(hexId).attr({
-                // width: 600,
-                // height: 600,
-                transform: "translate(" + (pos * (HEX_WIDTH+HEX_SIDE_LENGTH + SPACER)) + "," + (i*(HEX_HEIGHT + SPACER)) + ")"
-            });
+            if(secondRow){
+                $(hexId).attr({
+                    width: 1000,
+                    height: 1000,
+                    transform: "translate(" + (pos * (HEX_WIDTH+HEX_SIDE_LENGTH + SPACER) - HEX_WIDTH/2) + "," + (i*(HEX_HEIGHT + SPACER) - HEX_HEIGHT/2) + ")"
+                });
+            } else {
+                $(hexId).attr({
+                    width: 600,
+                    height: 600,
+
+                    transform: "translate(" + (pos * (HEX_WIDTH+HEX_SIDE_LENGTH + SPACER) + HEX_WIDTH/2 +HEX_SIDE_LENGTH/2 + SPACER/2 - HEX_WIDTH/2)
+                                            + ","
+                                            + ((i-NUM_COL)*(HEX_HEIGHT + SPACER) + HEX_HEIGHT/2 + SPACER/2 - HEX_HEIGHT/2) + ")"
+                });
+            }
 
 
 
