@@ -96,7 +96,7 @@ jspm_packages
 .AppleDouble
 .LSOverride
 
-# Icon must end with two \r
+# Icon must end with two \HEX_SIDE_LENGTH
 Icon
 
 # Thumbnails
@@ -191,7 +191,7 @@ GitHub.sublime-settings
 # composer.lock
 ### macOS template
 
-# Icon must end with two \r
+# Icon must end with two \HEX_SIDE_LENGTH
 
 
 # Thumbnails

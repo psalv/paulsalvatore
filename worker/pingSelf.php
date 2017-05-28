@@ -44,4 +44,4 @@ foreach ($handles as $ch) {
 curl_multi_close($mh);
 
 // heroku logs -t
-error_log('Completed at ' . date('r'));
+error_log('Completed at ' . date('HEX_SIDE_LENGTH'));

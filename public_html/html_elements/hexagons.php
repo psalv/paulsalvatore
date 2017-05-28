@@ -14,7 +14,7 @@ If we make each side of the hexagon length r (the hypotenuse) then we can calcul
 
 
 
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="200" id="svg1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10000" height="10000" id="svg1">
     <defs>
 
         <!-- Regular Hexagon -->
