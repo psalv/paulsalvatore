@@ -4,8 +4,8 @@
 
 /******************************************** HEXAGON SCALING + GRID **************************************************/
 
-var ADJACENT = Math.sqrt(3)/2;  // used for calculating size of side adjacent to 30degree angle
-var OPPOSITE = 0.5;             // used for calculating size of side opposite to 30degree angle
+var ADJACENT = Math.sqrt(3)/2;  // Used for calculating size of side adjacent to 30degree angle
+var OPPOSITE = 0.5;             // Used for calculating size of side opposite to 30degree angle
 
 var NUM_COL = 3;                // The number of hexagons in the largest column
 var NUM_HEX = 18;               // Total number of hexagons
@@ -23,6 +23,7 @@ var windowWidth;
 function resizeEvent() {
     windowWidth = $(this).width();
     windowHeight = $(this).height();
+
     HEX_SIDE_LENGTH = Math.floor(windowWidth/9);
     HEX_WIDTH = HEX_SIDE_LENGTH + 2*HEX_SIDE_LENGTH*OPPOSITE;
     HEX_HEIGHT = 2*HEX_SIDE_LENGTH*ADJACENT;
@@ -31,7 +32,6 @@ function resizeEvent() {
         (HEX_WIDTH) + "," + (HEX_SIDE_LENGTH*ADJACENT) + " " +
         (HEX_SIDE_LENGTH + HEX_SIDE_LENGTH*OPPOSITE) + "," + (HEX_HEIGHT) + " " +
         (HEX_SIDE_LENGTH*OPPOSITE) + "," + (HEX_HEIGHT) + " 0," + (HEX_SIDE_LENGTH*ADJACENT);
-
 
     $('.hexagon').attr('points', points);
 
@@ -42,6 +42,13 @@ function resizeEvent() {
         var cur = i;
         secondRow = i < NUM_COL;
 
+        /* We translate based on the current row.
+           There are 2x-1 different possible rows (x being the number of hexagons in the largest column), and their
+           starting points will be in the first and second rows.
+           Starting points in the first column are not offset, while starting points in the second column are.
+
+           We move everything up and to the left in order to avoid empty space at the top  and sides.
+        */
         while(cur < NUM_HEX){
             hexId = '#hex' + cur;
             pos = Math.floor(cur/(2*NUM_COL - 1));
@@ -56,7 +63,6 @@ function resizeEvent() {
                 $(hexId).attr({
                     width: 500,
                     height: 500,
-
                     transform: "translate(" + (pos * (HEX_WIDTH+HEX_SIDE_LENGTH + SPACER) + HEX_WIDTH/2 +HEX_SIDE_LENGTH/2 + SPACER/2 - HEX_WIDTH/2)
                                             + ","
                                             + ((i-NUM_COL)*(HEX_HEIGHT + SPACER) + HEX_HEIGHT/2 + SPACER/2 - HEX_HEIGHT/2) + ")"
