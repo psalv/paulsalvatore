@@ -32,6 +32,9 @@
 <?php
 $page = "index-page";
 $hasGmap = true;
+
+include "html_elements/hexagons.php"
+
 ?>
 
 
@@ -50,6 +53,7 @@ $hasGmap = true;
 
 
 <!-- Additional JS Files-->
+<script src="assets/js/main.js" type="text/javascript"></script>
 
 
 
