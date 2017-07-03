@@ -34,6 +34,7 @@ function resizeEvent() {
         (HEX_SIDE_LENGTH*OPPOSITE) + "," + (HEX_HEIGHT) + " 0," + (HEX_SIDE_LENGTH*ADJACENT);
 
     $('.hexagon').attr('points', points);
+    $('#svgHex').attr({width: windowWidth, height: HEX_HEIGHT*2 + SPACER});
 
     var secondRow;
     var hexId;
