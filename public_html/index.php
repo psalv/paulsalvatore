@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Blank Heroku Project</title>
+    <title>This is Paul.</title>
     <!-- Favicons
     ================================================== -->
     <link rel="manifest" href="assets/img/favicon/manifest.json">
