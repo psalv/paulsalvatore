@@ -42,7 +42,7 @@ function changeTrainCar(currentCar: any, nextCar: any, direction: String): void{
 }
 
 
-$(document).ready(function () {
+$(function () {
     $('#toggle-car-1').on('click', function () {
         changeTrainCar($('.traincar-active').first(), $('#car-2'), 'down');
     });

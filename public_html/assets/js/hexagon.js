@@ -44,12 +44,12 @@ function resizeEvent() {
         secondRow = i < NUM_COL;
 
         /* We translate based on the current row.
-         There are 2x-1 different possible rows (x being the number of hexagons in the largest column), and their
-         starting points will be in the first and second rows.
-         Starting points in the first column are not offset, while starting points in the second column are.
+           There are 2x-1 different possible rows (x being the number of hexagons in the largest column), and their
+           starting points will be in the first and second rows.
+           Starting points in the first column are not offset, while starting points in the second column are.
 
-         We move everything up and to the left in order to avoid empty space at the top  and sides.
-         */
+           We move everything up and to the left in order to avoid empty space at the top  and sides.
+        */
         while(cur < NUM_HEX){
             hexId = '#hex' + cur;
             pos = Math.floor(cur/(2*NUM_COL - 1));
@@ -86,8 +86,4 @@ $(function jQueryResize (){
 // Since we use absolute positioning, we need to resize when the website is loaded in order to fit to the current screen size.
 $(function (){
     resizeEvent();
-
-    // $(document).on('click', function({
-    // console.log('q');
-    // }));
 });
