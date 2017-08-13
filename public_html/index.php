@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Blank Heroku Project</title>
+    <title>Paul Salvatore</title>
     <!-- Favicons
     ================================================== -->
     <link rel="manifest" href="assets/img/favicon/manifest.json">
@@ -53,7 +53,7 @@ include "html_elements/hexagons.php"
 
 
 <!-- Additional JS Files-->
-<script src="assets/js/main.js" type="text/javascript"></script>
+<script src="assets/js/hexagon.js" type="text/javascript"></script>
 
 
 

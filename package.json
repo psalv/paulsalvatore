@@ -1,0 +1,12 @@
+{
+  "name": "paul-salvatore",
+  "author": "Paul Salvatore",
+  "version": "1.0.0",
+  "main": "./public_html/assets/ts/main.js",
+  "types": "./lib/main.d.ts",
+  "license": "",
+  "repository": "",
+  "dependencies": [
+    "typescript"
+  ]
+}

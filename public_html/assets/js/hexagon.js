@@ -55,7 +55,7 @@ function resizeEvent() {
 
             if(secondRow){
                 $(hexId).attr({
-                    width: 500, //todo: i'm pretty sure these need to be specifically set
+                    width: 500, //todo: I'm pretty sure these need to be specifically set
                     height: 500,
                     transform: "translate(" + (pos * (HEX_WIDTH+HEX_SIDE_LENGTH + SPACER) - HEX_WIDTH/2) + "," + (i*(HEX_HEIGHT + SPACER) - HEX_HEIGHT/2) + ")"
                 });
