@@ -27,10 +27,12 @@ If we make each side of the hexagon length r (the hypotenuse) then we can calcul
 
     <?php
 
+    $NUM_HEXAGONS = 18;
+
     // A better way would be to give the images identical names differing by the end number from 1 to n, n being the total number of images.
     // This allows us to do what we did with the hex, although isn't as easily changeable (it is much cleaner though).
-    for($i = 0; $i < 18; $i++){
     $imageLocations = ['assets/img/stock/stockIm1.min.png'];
+    for($i = 0; $i < $NUM_HEXAGONS; $i++){
         echo "<image xlink:href='" . $imageLocations[0] . "' clip-path='url(#hexClip)' class='svgHex' id='hex" . $i . "'></image>";
     }
 

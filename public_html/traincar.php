@@ -29,3 +29,13 @@
 <script type="text/javascript">
 
 </script>
+
+
+<!--
+
+-class to indicate if #2 or #3 is in focus currently
+    -can just find this class for finding left of #1 and right of #4
+    -class changes for down of #2 (#2 should get class removed, #3 added), and the reverse
+    -left #1 is always going to #4 and vice versa.
+
+-->
