@@ -39,13 +39,15 @@ function changeTrainCar(currentCar: any, nextCar: any, direction: String): void{
         });
     }
     currentCar.addClass('traincar-active');
-
 }
 
 
 $(document).ready(function () {
-    $('#toggle-car').on('click', function () {
-        console.log('q');
-        changeTrainCar($('#car-1'), $('#car-2'), 'up');
+    $('#toggle-car-1').on('click', function () {
+        changeTrainCar($('.traincar-active').first(), $('#car-2'), 'down');
+    });
+
+    $('#toggle-car-2').on('click', function () {
+        changeTrainCar($('.traincar-active').first(), $('#car-3'), 'right');
     });
 });

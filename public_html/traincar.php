@@ -10,8 +10,16 @@
     second car
 </div>
 
-<div id="toggle-car" style="top: 500px; position: absolute">
-    switch
+<div class="traincar-car" id="car-3">
+    third car
+</div>
+
+<div id="toggle-car-1" style="top: 500px; position: absolute; color: white">
+    switch-towards-down
+</div>
+
+<div id="toggle-car-2" style="top: 540px; position: absolute; color: white">
+    switch-towards-right
 </div>
 
 <script src="assets/js/jquery.min.js" type="text/javascript"></script>
