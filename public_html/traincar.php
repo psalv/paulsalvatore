@@ -2,15 +2,15 @@
 <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="assets/less/main.css">
 
-<div class="traincar-car traincar-active" id="car-1">
-    first car
+<div class="traincar-car traincar-active" data-car-id='0' id="car-0">
+    <?php include "html_elements/hexagons.php" ?>
 </div>
 
-<div class="traincar-car" id="car-2">
+<div class="traincar-car" data-car-id='1' id="car-1">
     second car
 </div>
 
-<div class="traincar-car" id="car-3">
+<div class="traincar-car" data-car-id='2' id="car-2">
     third car
 </div>
 
@@ -24,7 +24,7 @@
 
 <script src="assets/js/jquery.min.js" type="text/javascript"></script>
 <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
-<script src="assets/ts/main.js" type="text/javascript"></script>
+<script src="assets/ts/traincar.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 
