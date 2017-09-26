@@ -1,22 +1,39 @@
 
 function changeTrainCar(currentCar: any, nextCar: any, direction: String): void{
     let currentCarMove: String;
-
     let vertical = false;
     switch(direction){
         case 'up':
             currentCarMove = '-100%';
             vertical = true;
+            nextCar.css({
+                'left': '0%',
+                'top': '100%'
+            });
             break;
         case 'down':
             currentCarMove = '100%';
             vertical = true;
+            nextCar.css({
+                'left': '0%',
+                'top': '-100%'
+            });
             break;
+
+
         case 'left':
             currentCarMove = '-100%';
+            nextCar.css({
+                'left': '-100%',
+                'top': '0%'
+            });
             break;
         case 'right':
             currentCarMove = '100%';
+            nextCar.css({
+                'left': '100%',
+                'top': '0%'
+            });
             break;
     }
 
@@ -59,12 +76,10 @@ $('body').on('keydown', function (e) {
     moveCar(key);
 });
 
-// $(function () {
-//     $('#toggle-car-1').on('click', function () {
-//         changeTrainCar($('.traincar-active').first(), $('#car-2'), 'down');
-//     });
-//
-//     $('#toggle-car-2').on('click', function () {
-//         changeTrainCar($('.traincar-active').first(), $('#car-3'), 'right');
-//     });
-// });
+$('#navigation-left').on('click', function () {
+    moveCar(37);
+});
+
+$('#navigation-right').on('click', function () {
+    moveCar(39);
+});

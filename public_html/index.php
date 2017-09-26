@@ -23,6 +23,7 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/less/main.css">
 
 </head>
 
@@ -35,6 +36,7 @@ $hasGmap = true;
 
 
 include "html_elements/traincar.php";
+include "html_elements/navigation.php";
 //include "html_elements/hexagons.php";
 
 ?>

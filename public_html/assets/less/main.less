@@ -1,4 +1,41 @@
 
+*{
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/*============================================ NAVIGATION.PHP =====================================*/
+
+.navButton{
+  height: 36px;
+  width: 36px;
+  border: 2px solid purple;
+  font-size: 27px;
+  border-radius: 50%;
+  color: white;
+  transition: all 0.5s;
+  background-color: purple;
+  cursor: pointer;
+  z-index: 9999 !important;
+  position: fixed;
+  left: 10px;
+}
+
+#navigation-left{
+  .navButton;
+  top: 90%;
+  left: 10%;
+  padding: 2px 6px;
+}
+
+#navigation-right{
+  .navButton;
+  top: 90%;
+  left: 90%;
+  padding: 2px 9px;
+}
+
+/*============================================ TRAINCAR.PHP =====================================*/
 
 .traincar-car{
   width: 100%;
@@ -8,21 +45,19 @@
   display: none;
 }
 
+#car-0{
+  background-color: purple;
+}
+
 #car-1{
-  top: 0%;
-  left: 0%;
   background-color: red;
 }
 
 #car-2{
-  top: -100%;
-  left: 0%;
   background-color: blue;
 }
 
 #car-3{
-  top: 0%;
-  left: -100%;
   background-color: yellow;
 }
 
