@@ -34,8 +34,8 @@ $page = "index-page";
 $hasGmap = true;
 
 
-include "html_elements/traincar-1.php"
-include "html_elements/hexagons.php"
+include "html_elements/traincar.php";
+//include "html_elements/hexagons.php";
 
 ?>
 
@@ -56,6 +56,7 @@ include "html_elements/hexagons.php"
 
 <!-- Additional JS Files-->
 <script src="assets/js/hexagon.js" type="text/javascript"></script>
+<script src="assets/ts/traincar.js" type="text/javascript"></script>
 
 
 
