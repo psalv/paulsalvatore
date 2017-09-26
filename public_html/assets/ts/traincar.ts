@@ -22,14 +22,14 @@ function changeTrainCar(currentCar: any, nextCar: any, direction: String): void{
 
 
         case 'left':
-            currentCarMove = '-100%';
+            currentCarMove = '100%';
             nextCar.css({
                 'left': '-100%',
                 'top': '0%'
             });
             break;
         case 'right':
-            currentCarMove = '100%';
+            currentCarMove = '-100%';
             nextCar.css({
                 'left': '100%',
                 'top': '0%'
