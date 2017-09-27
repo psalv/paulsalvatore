@@ -61,7 +61,8 @@ include "html_elements/navigation.php";
 <!-- Additional JS Files-->
 <script src="assets/js/hexagon.js" type="text/javascript"></script>
 <script src="assets/ts/traincar.js" type="text/javascript"></script>
-<script src="assets/ts/main.js" type="text/javascript"></script>
+<script src="assets/ts/changingText.js" type="text/javascript"></script>
+<script src="assets/ts/connect.js" type="text/javascript"></script>
 
 
 

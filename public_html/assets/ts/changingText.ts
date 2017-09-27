@@ -1,4 +1,5 @@
 
+/*============================================ TRAINCAR-1 ============================================================*/
 
 
 let enjoyWords = ["guitar.", "yoga.", "learning.", "creating.", "painting.", "Star Trek.", "Wii Dance.", "cooking.", "problem solving."];
@@ -12,13 +13,13 @@ setInterval(function () {
         wii.addClass("hidden");
     }
     $('#enjoyRotation').html(enjoyWords[enjoyPosition++ % enjoyWords.length]);
-}, 2000);
+}, 2300);
 
 let beenWords = ["a researcher.", "quality assurance.", "a unit tester.", "IT support.", "a student.", "a content manager.", "a developer.",];
 let beenPosition = 0;
 setInterval(function () {
     $('#beenRotation').html(beenWords[beenPosition++ % beenWords.length]);
-}, 1700);
+}, 2000);
 
 
 function placeFixedText(){
@@ -30,3 +31,4 @@ $(function jQueryResize (){
         placeFixedText();
     })
 });
+

@@ -2,11 +2,7 @@
 @RED: #F44336;
 @LIGHTRED: #FFCDD2;
 @PURPLE: #9C27B0;
-
-.centerer{
-  margin: 0 auto;
-  display: table;
-}
+@GREY: #757575;
 
 .adamina{
   font-family: 'Adamina', serif;
@@ -93,8 +89,94 @@
 }
 
 #car-3{
-  background-color: yellow;
+  width: 100%;
+  .adamina;
+  background-color: white;
+  color: @RED;
+  font-size: 5em;
+
+  .content-block{
+    margin-top: 10%;
+  }
+
+  i {
+    cursor: pointer;
+  }
+
+
+
+
+  // SMOKE
+
+  .smoke{
+    position: absolute;
+    z-index: 3;
+    display: block;
+    height: 8px;
+    width: 8px;
+    border: 15px solid @GREY;
+    border-radius: 15px;
+    opacity: 0;
+  }
+
+  /* Smoke animation */
+  //
+  @keyframes smokeFade {
+    0% { opacity: 0; transform: scale(0) }
+    40% { opacity: 0.8; transform: scale(1) }
+    100% { opacity: 0; transform: scale(0.7) }
+  }
+
+  @keyframes smokeR {
+    0%   { transform: scale(0.2) translate(0, 0) }
+    10%  { opacity: 0.6; transform: scale(0.2) translate(0, -5px) }
+    100% { opacity: 0.0; transform: scale(1) translate(20px, -130px) }
+  }
+  //
+  #smoke1 {
+    animation-name: smokeFade;
+    animation-duration: 6s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+  }
+
+  #smoke2 {
+    animation-name: smokeFade;
+    animation-duration: 6s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+  }
+
+  #smoke3 {
+    animation-name: smokeFade;
+    animation-duration: 6s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+  }
+  //#smoke .s1 { animation: smokeR 10s 1s infinite }
+  //#smoke .s2 { animation: smokeL 10s 2s infinite }
+  //#smoke .s3 { animation: smokeR 10s 3s infinite }
+  //#smoke .s4 { animation: smokeL 10s 4s infinite }
+  //#smoke .s5 { animation: smokeR 10s 5s infinite }
+  //#smoke .s6 { animation: smokeL 10s 6s infinite }
+  //#smoke .s7 { animation: smokeR 10s 7s infinite }
+  //#smoke .s8 { animation: smokeL 10s 8s infinite }
+  //#smoke .s9 { animation: smokeR 10s 9s infinite }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .traincar-active{
