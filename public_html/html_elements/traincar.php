@@ -37,10 +37,12 @@
             <div class="smoke" id="smoke3"></div>
         </div>
 
-        <div class="text-center">
-            <i class="fa fa-github-square" id="linkedinIcon"></i>
-            <i class="fa fa-linkedin-square" id="githubIcon"></i>
-            <i class="fa fa-envelope-square" id="mailIcon"></i>
+        <div class="text-center icons">
+            <i class="fa fa-linkedin-square" id="linkedinIcon"></i>
+            <i class="fa fa-github-square" id="githubIcon"></i>
+            <a href="mailto:paulanthonysalvatore@gmail.com">
+                <i class="fa fa-envelope-square" id="mailIcon"></i>
+            </a>
             <i class="fa fa-google-plus-square" id="googleIcon"></i>
             <i class="fa fa-fire" id="smokeIcon"></i>
         </div>

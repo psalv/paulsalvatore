@@ -22,12 +22,12 @@
 .navButton{
   height: 36px;
   width: 36px;
-  border: 2px solid @PURPLE;
+  border: 2px solid @RED;
   font-size: 27px;
   border-radius: 50%;
   color: white;
   transition: all 0.5s;
-  background-color: @PURPLE;
+  background-color: @RED;
   cursor: pointer;
   z-index: 9999 !important;
   position: fixed;
@@ -103,69 +103,71 @@
     cursor: pointer;
   }
 
-
-
-
-  // SMOKE
-
-  .smoke{
-    position: absolute;
-    z-index: 3;
-    display: block;
-    height: 8px;
-    width: 8px;
-    border: 15px solid @GREY;
-    border-radius: 15px;
-    opacity: 0;
+  .icons{
+    margin-top: 40px;
   }
 
-  /* Smoke animation */
-  //
-  @keyframes smokeFade {
-    0% { opacity: 0; transform: scale(0) }
-    40% { opacity: 0.8; transform: scale(1) }
-    100% { opacity: 0; transform: scale(0.7) }
+  a{
+    text-decoration: none !important;
+    color: @RED !important;
   }
 
-  @keyframes smokeR {
-    0%   { transform: scale(0.2) translate(0, 0) }
-    10%  { opacity: 0.6; transform: scale(0.2) translate(0, -5px) }
-    100% { opacity: 0.0; transform: scale(1) translate(20px, -130px) }
+  #currentLink{
+    font-size: 20px !important;
+    cursor: pointer;
   }
-  //
-  #smoke1 {
-    animation-name: smokeFade;
-    animation-duration: 6s;
-    animation-delay: 1s;
-    animation-iteration-count: infinite;
-  }
+  .smokeContainer{
+    .smoke{
+      position: absolute;
+      z-index: 3;
+      display: block;
+      height: 8px;
+      width: 8px;
+      border: 15px solid @GREY;
+      border-radius: 15px;
+      opacity: 0;
+    }
 
-  #smoke2 {
-    animation-name: smokeFade;
-    animation-duration: 6s;
-    animation-delay: 3s;
-    animation-iteration-count: infinite;
-  }
+    @keyframes smokeFade1 {
+      0% { opacity: 0; transform: scale(0) }
+      40% { opacity: 0.8; transform: scale(1) }
+      100% { opacity: 0; transform: scale(0.7) }
+    }
 
-  #smoke3 {
-    animation-name: smokeFade;
-    animation-duration: 6s;
-    animation-delay: 5s;
-    animation-iteration-count: infinite;
-  }
-  //#smoke .s1 { animation: smokeR 10s 1s infinite }
-  //#smoke .s2 { animation: smokeL 10s 2s infinite }
-  //#smoke .s3 { animation: smokeR 10s 3s infinite }
-  //#smoke .s4 { animation: smokeL 10s 4s infinite }
-  //#smoke .s5 { animation: smokeR 10s 5s infinite }
-  //#smoke .s6 { animation: smokeL 10s 6s infinite }
-  //#smoke .s7 { animation: smokeR 10s 7s infinite }
-  //#smoke .s8 { animation: smokeL 10s 8s infinite }
-  //#smoke .s9 { animation: smokeR 10s 9s infinite }
+    @keyframes smokeFade2 {
+      0% { opacity: 0; transform: scale(0) }
+      40% { opacity: 0.8; transform: scale(0.8) }
+      100% { opacity: 0; transform: scale(0.7) }
+    }
 
+    @keyframes smokeFade3 {
+      0% { opacity: 0; transform: scale(0) }
+      40% { opacity: 0.8; transform: scale(0.6) }
+      100% { opacity: 0; transform: scale(0.5) }
+    }
+
+    #smoke1 {
+      animation-name: smokeFade1;
+      animation-duration: 6s;
+      animation-delay: 1s;
+      animation-iteration-count: infinite;
+    }
+
+    #smoke2 {
+      animation-name: smokeFade2;
+      animation-duration: 6s;
+      animation-delay: 3s;
+      animation-iteration-count: infinite;
+    }
+
+    #smoke3 {
+      animation-name: smokeFade3;
+      animation-duration: 6s;
+      animation-delay: 5s;
+      animation-iteration-count: infinite;
+    }
+  }
 }
-
-
 
 
 
