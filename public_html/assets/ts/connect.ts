@@ -30,7 +30,7 @@ setInterval(function () {
     } else {
         smokeContainer.addClass("hidden");
     }
-}, 2000);
+}, 1000);
 
 
 $('#linkedinIcon').on("mouseover", function () {
