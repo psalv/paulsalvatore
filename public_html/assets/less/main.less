@@ -1,7 +1,24 @@
 
+@RED: #F44336;
+@LIGHTRED: #FFCDD2;
+@PURPLE: #9C27B0;
+
+.centerer{
+  margin: 0 auto;
+  display: table;
+}
+
+.adamina{
+  font-family: 'Adamina', serif;
+}
+
 *{
   overflow-x: hidden;
   overflow-y: hidden;
+}
+
+*{
+  //border: solid 1px red !important;
 }
 
 /*============================================ NAVIGATION.PHP =====================================*/
@@ -9,12 +26,12 @@
 .navButton{
   height: 36px;
   width: 36px;
-  border: 2px solid purple;
+  border: 2px solid @PURPLE;
   font-size: 27px;
   border-radius: 50%;
   color: white;
   transition: all 0.5s;
-  background-color: purple;
+  background-color: @PURPLE;
   cursor: pointer;
   z-index: 9999 !important;
   position: fixed;
@@ -46,11 +63,29 @@
 }
 
 #car-0{
-  background-color: purple;
+  //background-color: purple;
 }
 
 #car-1{
-  background-color: red;
+  width: 100%;
+  .adamina;
+  background-color: white;
+  color: @RED;
+  font-size: 5em;
+
+  .content-block{
+    margin-top: 10%;
+  }
+  .cycleWords{
+    margin-left: 25% !important;
+    margin-bottom: 50px;
+  }
+
+  #wii{
+    font-size: 20px !important;
+    position: fixed;
+    width: 100%;
+  }
 }
 
 #car-2{
