@@ -39,23 +39,25 @@ function changeTrainCar(currentCar: any, nextCar: any, direction: String): void{
 
     nextCar.addClass('traincar-active');
     if(vertical) {
-        currentCar.stop().animate({
+        currentCar.animate({
             top: currentCarMove
         });
 
-        nextCar.stop().animate({
+        nextCar.animate({
             top: '0'
         });
     } else {
-        currentCar.stop().animate({
+        currentCar.animate({
             left: currentCarMove
-        }, 1000);
+        }, 750);
 
-        nextCar.stop().animate({
-            left: '0',
-        }, 1000, );
+        nextCar.animate({
+            left: '0'
+        }, 740);
     }
-    currentCar.removeClass('traincar-active');
+    setTimeout(function () {
+        currentCar.removeClass('traincar-active');
+    }, 750);
 }
 
 function moveCar(key: number){
