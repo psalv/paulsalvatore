@@ -18,8 +18,6 @@ var HEX_HEIGHT;
 var windowHeight;
 var windowWidth;
 
-
-
 function resizeEvent() {
     windowWidth = $(this).width();
     windowHeight = $(this).height();

@@ -20,7 +20,6 @@ function changeTrainCar(currentCar: any, nextCar: any, direction: String): void{
             });
             break;
 
-
         case 'left':
             currentCarMove = '100%';
             nextCar.css({

@@ -17,6 +17,7 @@ function placeSmoke() {
     });
 }
 
+
 $(function jQueryResize (){
     $(window).resize(function(){
         placeSmoke();

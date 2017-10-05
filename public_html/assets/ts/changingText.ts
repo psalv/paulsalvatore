@@ -22,6 +22,7 @@ setInterval(function () {
 }, 2000);
 
 
+
 function placeFixedText(){
     $('#wii').css('top', ($('#beenRotation').offset().top - 50).toString() + "px");
 }
@@ -31,4 +32,3 @@ $(function jQueryResize (){
         placeFixedText();
     })
 });
-

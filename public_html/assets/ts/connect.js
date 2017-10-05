@@ -53,3 +53,4 @@ $('#currentLink').on('click', function () {
         window.open(this.innerHTML, '_blank');
     }
 });
+
