@@ -122,11 +122,11 @@
   opacity: 0;
 }
 @keyframes smokeFade1 {
-  0% {
+  1% {
     opacity: 0;
     transform: scale(0);
   }
-  40% {
+  50% {
     opacity: 0.8;
     transform: scale(1);
   }
@@ -136,31 +136,31 @@
   }
 }
 @keyframes smokeFade2 {
-  0% {
+  1% {
     opacity: 0;
     transform: scale(0);
   }
-  40% {
+  50% {
     opacity: 0.8;
     transform: scale(0.8);
   }
   100% {
     opacity: 0;
-    transform: scale(0.7);
+    transform: scale(0.5);
   }
 }
 @keyframes smokeFade3 {
-  0% {
+  1% {
     opacity: 0;
     transform: scale(0);
   }
-  40% {
+  50% {
     opacity: 0.8;
-    transform: scale(0.6);
+    transform: scale(0.5);
   }
   100% {
     opacity: 0;
-    transform: scale(0.5);
+    transform: scale(0.3);
   }
 }
 #car-3 .smokeContainer #smoke1 {
