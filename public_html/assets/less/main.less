@@ -19,15 +19,12 @@
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-*{
-  //border: solid 1px red !important;
+html {
+  min-width: 600px !important;
 }
 
-#hexClip{
-  //.cardShadow;
-  //-webkit-filter: drop-shadow( -5px -5px 5px #000 );
-  //filter: drop-shadow( -5px -5px 5px #000 );
-  //-webkit-svg-shadow: 0 0 7px #53BE12;
+*{
+  //border: solid 1px red !important;
 }
 
 /*============================================ NAVIGATION.PHP =====================================*/
@@ -144,12 +141,61 @@
 
   .card{
     .cardShadow;
-    width: 60%;
+    width: 70%;
     height: 100%;
     z-index: 2;
     position: absolute;
-    left: 40% !important;
+    left: 30% !important;
     background-color: white !important;
+    //
+    .infoCardContainer{
+      height: inherit;
+    //
+    //  .infoRow{
+    //    display: table;
+    //    vertical-align: middle;
+    //    height: inherit;
+    //
+    //    div{
+    //      display: table-cell;
+    //    }
+    //
+    //  }
+
+      //.topRow {
+      //  margin-top: 50vh !important;
+      //}
+
+
+    }
+
+    .row{
+      margin-left: 2vh;
+      margin-top: 5vh;
+      height: 37vh !important;
+    }
+    .infoCard{
+      .cardShadow;
+      //border: 1px solid black;
+      width: 20%;
+      margin: 2%;
+      height: 30vh !important;
+      //margin-top: 4vh !important;
+      //margin-left: 3% !important;
+      //margin: 2vh;
+      //width: 20vh !important;
+    }
+
+    //.infoCardTop{
+    //  .infoCard;
+    //  margin-top: 10vh;
+    //}
+    //
+    //.infoCardBottom{
+    //  .infoCard;
+    //  margin-top: 10vh;
+    //}
+
   }
 
   .backgroundRight{
@@ -163,43 +209,7 @@
   }
 }
 
-/*
-#car-2{
 
-  .informationContainer {
-    height: 100vh;
-    background-color: #1b6d85;
-
-    .centerContainer{
-      display: table;
-      height: inherit;
-    }
-
-    .centerElement{
-      display: table-cell;
-      vertical-align: middle;
-    }
-
-    .containerRight{
-      height: inherit;
-      width: 40%;
-      margin-right: 5% !important;
-      margin-left: 2.5% !important;
-      background-color: #5bc0de !important;
-    }
-
-    .containerLeft{
-      height: inherit;
-      width: 40%;
-      margin-left: 5% !important;
-      margin-right: 2.5% !important;
-      background-color: #5bc0de !important;
-    }
-
-  }
-
-}
-*/
 //============================================ TRAINCAR #3 (CONNECT)
 
 #car-3{

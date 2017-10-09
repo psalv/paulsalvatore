@@ -1,5 +1,6 @@
 
-<div class="traincar-car traincar-active" data-car-id='0' id="car-0">
+<!--<div class="traincar-car traincar-active" data-car-id='0' id="car-0">-->
+<div class="traincar-car" data-car-id='0' id="car-0" style="top: -100%">
     <?php include "hexagons.php" ?>
 </div>
 
@@ -23,10 +24,26 @@
 
 </div>
 
-<div class="traincar-car" data-car-id='2' id="car-2" style="top: -100%">
-    <?php //include "information.php"; ?>
-    <div class="card">
-        TEST
+<!--<div class="traincar-car" data-car-id='2' id="car-2" style="top: -100%">-->
+<div class="traincar-car traincar-active" data-car-id='2' id="car-2">
+    <div class="card infoCardContainer">
+<!--        <div class="infoRow">-->
+<!--            <div>test</div>-->
+            <div class="row">
+                <div class="col-xs-3 infoCard">a</div>
+                <div class="col-xs-3 infoCard">b</div>
+                <div class="col-xs-3 infoCard">c</div>
+                <div class="col-xs-3 infoCard">d</div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3 infoCard">e</div>
+                <div class="col-xs-3 infoCard">f</div>
+                <div class="col-xs-3 infoCard">g</div>
+                <div class="col-xs-3 infoCard">h</div>
+            </div>
+<!--        </div>-->
+
+
     </div>
 
     <div class="backgroundRight"></div>
