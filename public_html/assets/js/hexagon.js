@@ -54,11 +54,11 @@ function resizeEvent() {
             pos = Math.floor(cur/(2*NUM_COL - 1));
 
             if(secondRow){
-                $(hexIdSh).attr({
-                    width: HEX_WIDTH,
-                    height: HEX_HEIGHT * 1.17,
-                    transform: "translate(" + (pos * (HEX_WIDTH+HEX_SIDE_LENGTH + SPACER) - HEX_WIDTH/2 + 2) + "," + (i*(HEX_HEIGHT + SPACER) - HEX_HEIGHT/2 + 2) + ")"
-                });
+                // $(hexIdSh).attr({
+                //     width: HEX_WIDTH,
+                //     height: HEX_HEIGHT * 1.17,
+                //     transform: "translate(" + (pos * (HEX_WIDTH+HEX_SIDE_LENGTH + SPACER) - HEX_WIDTH/2 + 2) + "," + (i*(HEX_HEIGHT + SPACER) - HEX_HEIGHT/2 + 2) + ")"
+                // });
 
                 $(hexId).attr({
                     width: HEX_WIDTH,
@@ -68,13 +68,13 @@ function resizeEvent() {
 
 
             } else {
-                $(hexIdSh).attr({
-                    width: HEX_WIDTH,
-                    height: HEX_HEIGHT * 1.17,
-                    transform: "translate(" + (pos * (HEX_WIDTH+HEX_SIDE_LENGTH + SPACER) + HEX_WIDTH/2 +HEX_SIDE_LENGTH/2 + SPACER/2 - HEX_WIDTH/2 + 2)
-                    + ","
-                    + ((i-NUM_COL)*(HEX_HEIGHT + SPACER) + HEX_HEIGHT/2 + SPACER/2 - HEX_HEIGHT/2 + 2) + ")"
-                });
+                // $(hexIdSh).attr({
+                //     width: HEX_WIDTH,
+                //     height: HEX_HEIGHT * 1.17,
+                //     transform: "translate(" + (pos * (HEX_WIDTH+HEX_SIDE_LENGTH + SPACER) + HEX_WIDTH/2 +HEX_SIDE_LENGTH/2 + SPACER/2 - HEX_WIDTH/2 + 2)
+                //     + ","
+                //     + ((i-NUM_COL)*(HEX_HEIGHT + SPACER) + HEX_HEIGHT/2 + SPACER/2 - HEX_HEIGHT/2 + 2) + ")"
+                // });
 
                 $(hexId).attr({
                     width: HEX_WIDTH,

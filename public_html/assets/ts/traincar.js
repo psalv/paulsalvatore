@@ -35,18 +35,18 @@ function changeTrainCar(currentCar, nextCar, direction) {
     }
     nextCar.addClass('traincar-active');
     if (vertical) {
-        currentCar.animate({
+        currentCar.stop().animate({
             top: currentCarMove
         });
-        nextCar.animate({
+        nextCar.stop().animate({
             top: '0'
         });
     }
     else {
-        currentCar.animate({
+        currentCar.stop().animate({
             left: currentCarMove
         }, 750);
-        nextCar.animate({
+        nextCar.stop().animate({
             left: '0'
         }, 740);
     }
@@ -58,13 +58,20 @@ function moveCar(key) {
     if (key == 37) {
         // left
         var currentCar = $('.traincar-active').first();
-        var currentPosition = parseInt(currentCar.attr('data-car-id'));
-        changeTrainCar(currentCar, $('#car-' + ((((currentPosition - 1) % 4) + 4) % 4).toString()), 'left');
+        currentCar.promise().done(function () {
+            // TODO ! Was experimenting with ways to prevent the bugginess of fast traincar changes.
+            // currentCar = $('.traincar-active').first();
+            var currentPosition = parseInt(this.attr('data-car-id'));
+            changeTrainCar(this, $('#car-' + ((((currentPosition - 1) % 4) + 4) % 4).toString()), 'left');
+        });
     }
     else if (key == 39) {
         var currentCar = $('.traincar-active').first();
-        var currentPosition = parseInt(currentCar.attr('data-car-id'));
-        changeTrainCar(currentCar, $('#car-' + ((((currentPosition + 1) % 4) + 4) % 4).toString()), 'right');
+        currentCar.promise().done(function () {
+            // currentCar = $('.traincar-active').first();
+            var currentPosition = parseInt(this.attr('data-car-id'));
+            changeTrainCar(this, $('#car-' + ((((currentPosition + 1) % 4) + 4) % 4).toString()), 'right');
+        });
     }
 }
 $('body').on('keydown', function (e) {

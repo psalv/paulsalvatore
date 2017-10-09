@@ -24,7 +24,12 @@
 </div>
 
 <div class="traincar-car" data-car-id='2' id="car-2" style="top: -100%">
-    <?php include "information.php"; ?>
+    <?php //include "information.php"; ?>
+    <div class="card">
+        TEST
+    </div>
+
+    <div class="backgroundRight"></div>
 </div>
 
 <div class="traincar-car" data-car-id='3' id="car-3" style="top: -100%">
