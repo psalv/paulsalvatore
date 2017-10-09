@@ -9,7 +9,7 @@ var OPPOSITE = 0.5;             // Used for calculating size of side opposite to
 
 var NUM_COL = 3;                // The number of hexagons in the largest column
 var NUM_HEX = 10;               // Total number of hexagons
-var SPACER = 7;                 // Spacer between each hexagon
+var SPACER = 8;                 // Spacer between each hexagon
 
 var HEX_SIDE_LENGTH;
 var HEX_WIDTH;
@@ -50,18 +50,35 @@ function resizeEvent() {
         */
         while(cur < NUM_HEX){
             hexId = '#hex' + cur;
+            var hexIdSh = '#hexSh' + cur;
             pos = Math.floor(cur/(2*NUM_COL - 1));
 
             if(secondRow){
+                $(hexIdSh).attr({
+                    width: HEX_WIDTH,
+                    height: HEX_HEIGHT * 1.17,
+                    transform: "translate(" + (pos * (HEX_WIDTH+HEX_SIDE_LENGTH + SPACER) - HEX_WIDTH/2 + 2) + "," + (i*(HEX_HEIGHT + SPACER) - HEX_HEIGHT/2 + 2) + ")"
+                });
+
                 $(hexId).attr({
-                    width: 1000, //todo: I'm pretty sure these need to be specifically set
-                    height: 1000,
+                    width: HEX_WIDTH,
+                    height: HEX_HEIGHT * 1.17,
                     transform: "translate(" + (pos * (HEX_WIDTH+HEX_SIDE_LENGTH + SPACER) - HEX_WIDTH/2) + "," + (i*(HEX_HEIGHT + SPACER) - HEX_HEIGHT/2) + ")"
                 });
+
+
             } else {
+                $(hexIdSh).attr({
+                    width: HEX_WIDTH,
+                    height: HEX_HEIGHT * 1.17,
+                    transform: "translate(" + (pos * (HEX_WIDTH+HEX_SIDE_LENGTH + SPACER) + HEX_WIDTH/2 +HEX_SIDE_LENGTH/2 + SPACER/2 - HEX_WIDTH/2 + 2)
+                    + ","
+                    + ((i-NUM_COL)*(HEX_HEIGHT + SPACER) + HEX_HEIGHT/2 + SPACER/2 - HEX_HEIGHT/2 + 2) + ")"
+                });
+
                 $(hexId).attr({
-                    width: 1000,
-                    height: 1000,
+                    width: HEX_WIDTH,
+                    height: HEX_HEIGHT * 1.17,
                     transform: "translate(" + (pos * (HEX_WIDTH+HEX_SIDE_LENGTH + SPACER) + HEX_WIDTH/2 +HEX_SIDE_LENGTH/2 + SPACER/2 - HEX_WIDTH/2)
                     + ","
                     + ((i-NUM_COL)*(HEX_HEIGHT + SPACER) + HEX_HEIGHT/2 + SPACER/2 - HEX_HEIGHT/2) + ")"

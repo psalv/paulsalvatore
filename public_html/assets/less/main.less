@@ -1,5 +1,6 @@
 
 @RED: #F44336;
+@HOVERRED: lighten(@RED, 7%);
 @LIGHTRED: #FFCDD2;
 @PURPLE: #9C27B0;
 @GREY: #757575;
@@ -15,10 +16,18 @@
 
 .cardShadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 *{
   //border: solid 1px red !important;
+}
+
+#hexClip{
+  //.cardShadow;
+  //-webkit-filter: drop-shadow( -5px -5px 5px #000 );
+  //filter: drop-shadow( -5px -5px 5px #000 );
+  //-webkit-svg-shadow: 0 0 7px #53BE12;
 }
 
 /*============================================ NAVIGATION.PHP =====================================*/
@@ -40,8 +49,8 @@
   left: 10px;
 
   &:hover{
-    background-color: lighten(@RED, 7%);
-    border: 2px solid lighten(@RED, 7%);
+    background-color: @HOVERRED;
+    border: 2px solid @HOVERRED;
 
   }
 }
@@ -66,7 +75,6 @@
 .traincar-car{
   width: 100%;
   height: 100%;
-  border: 1px solid;
   position: absolute;
   display: none;
 }
