@@ -24,6 +24,8 @@
 /*============================================ NAVIGATION.PHP =====================================*/
 
 .navButton{
+  .cardShadow;
+
   height: 36px;
   width: 36px;
   border: 2px solid @RED;
@@ -36,6 +38,12 @@
   z-index: 9999 !important;
   position: fixed;
   left: 10px;
+
+  &:hover{
+    background-color: lighten(@RED, 7%);
+    border: 2px solid lighten(@RED, 7%);
+
+  }
 }
 
 #navigation-left{
@@ -101,7 +109,7 @@
 
   #wii{
     font-size: 15px !important;
-    position: fixed;
+    position: absolute;
     width: 100%;
     left: 15%;
   }

@@ -10,6 +10,7 @@
 }
 /*============================================ NAVIGATION.PHP =====================================*/
 .navButton {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: 36px;
   width: 36px;
   border: 2px solid #F44336;
@@ -23,7 +24,12 @@
   position: fixed;
   left: 10px;
 }
+.navButton:hover {
+  background-color: #f66358;
+  border: 2px solid #f66358;
+}
 #navigation-left {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: 36px;
   width: 36px;
   border: 2px solid #F44336;
@@ -40,7 +46,12 @@
   left: 10%;
   padding: 2px 6px;
 }
+#navigation-left:hover {
+  background-color: #f66358;
+  border: 2px solid #f66358;
+}
 #navigation-right {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: 36px;
   width: 36px;
   border: 2px solid #F44336;
@@ -56,6 +67,10 @@
   top: 90%;
   left: 90%;
   padding: 2px 9px;
+}
+#navigation-right:hover {
+  background-color: #f66358;
+  border: 2px solid #f66358;
 }
 /*============================================ TRAINCAR.PHP =====================================*/
 .traincar-car {
@@ -92,7 +107,7 @@
 }
 #car-1 #wii {
   font-size: 15px !important;
-  position: fixed;
+  position: absolute;
   width: 100%;
   left: 15%;
 }

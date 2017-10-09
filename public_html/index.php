@@ -43,18 +43,6 @@ include "html_elements/navigation.php";
 
 
 
-<!--
-
-TODO !!!
-
-In TC1 the way it is now looks good but it would look better if the left square had a shadow.
-This is very material design.
-
-This will require me making the area into two
-
-
--->
-
 <!--=========================================== JS SCRIPTS ==========================================-->
 <!-- jQuery -->
 <script src="assets/js/jquery.min.js" type="text/javascript"></script>
