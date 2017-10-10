@@ -2,18 +2,20 @@ var smokeIcon = $('#smokeIcon');
 var smokeContainer = $('.smokeContainer');
 function placeSmoke() {
     var offset = smokeIcon.offset();
+    console.log(offset);
     $("#smoke1").css({
-        top: offset.top - 50,
+        top: offset.top - 170,
         left: offset.left - 10
     }).next().css({
-        top: offset.top - 80,
+        top: offset.top - 200,
         left: offset.left + 40
     }).next().css({
-        top: offset.top - 140,
+        top: offset.top - 360,
         left: offset.left + 10
     });
 }
 $(function jQueryResize() {
+    console.log('res');
     $(window).resize(function () {
         placeSmoke();
     });
@@ -53,4 +55,3 @@ $('#currentLink').on('click', function () {
         window.open(this.innerHTML, '_blank');
     }
 });
-

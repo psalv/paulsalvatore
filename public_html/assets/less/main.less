@@ -11,7 +11,12 @@
 .fontStyle{
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+}
 
+* {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  .fontStyle;
 }
 
 .scrollable{
@@ -22,12 +27,6 @@
     overflow-x: scroll !important;
     overflow-y: scroll !important;
   }
-}
-
-* {
-  overflow-x: hidden;
-  overflow-y: hidden;
-  .fontStyle;
 }
 
 .cardShadow {
@@ -101,6 +100,8 @@
 //============================================ TRAINCAR #1 (ABOUT ME)
 
 #car-1{
+  .scrollable;
+
   width: 100%;
   background-color: white;
   color: @RED500;
@@ -142,7 +143,6 @@
 }
 
 //============================================ TRAINCAR #2 (INFORMATION)
-
 
 #car-2{
   .scrollable;
@@ -217,6 +217,8 @@
 //============================================ TRAINCAR #3 (CONNECT)
 
 #car-3{
+  .scrollable;
+
   width: 100%;
   background-color: white;
   font-size: 5em;
@@ -276,6 +278,7 @@
     }
 
     #smoke1 {
+      .cardShadow;
       animation-name: smokeFade1;
       animation-duration: 6s;
       animation-delay: 1s;
@@ -283,6 +286,7 @@
     }
 
     #smoke2 {
+      .cardShadow;
       animation-name: smokeFade2;
       animation-duration: 6s;
       animation-delay: 3s;
@@ -290,6 +294,7 @@
     }
 
     #smoke3 {
+      .cardShadow;
       animation-name: smokeFade3;
       animation-duration: 6s;
       animation-delay: 5s;

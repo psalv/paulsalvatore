@@ -2,6 +2,12 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
+* {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
 .scrollable {
   min-width: 1000px;
   min-height: 500px;
@@ -11,12 +17,6 @@
     overflow-x: scroll !important;
     overflow-y: scroll !important;
   }
-}
-* {
-  overflow-x: hidden;
-  overflow-y: hidden;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
 }
 .cardShadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -100,10 +100,18 @@
   display: block !important;
 }
 #car-1 {
+  min-width: 1000px;
+  min-height: 500px;
   width: 100%;
   background-color: white;
   color: #F44336;
   font-size: 2.2em;
+}
+@media (max-width: 800px) {
+  #car-1 {
+    overflow-x: scroll !important;
+    overflow-y: scroll !important;
+  }
 }
 #car-1 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -207,9 +215,17 @@
   background-color: #E57373;
 }
 #car-3 {
+  min-width: 1000px;
+  min-height: 500px;
   width: 100%;
   background-color: white;
   font-size: 5em;
+}
+@media (max-width: 800px) {
+  #car-3 {
+    overflow-x: scroll !important;
+    overflow-y: scroll !important;
+  }
 }
 #car-3 .content-block {
   color: #F44336 !important;
@@ -284,18 +300,24 @@
   }
 }
 #car-3 .smokeContainer #smoke1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   animation-name: smokeFade1;
   animation-duration: 6s;
   animation-delay: 1s;
   animation-iteration-count: infinite;
 }
 #car-3 .smokeContainer #smoke2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   animation-name: smokeFade2;
   animation-duration: 6s;
   animation-delay: 3s;
   animation-iteration-count: infinite;
 }
 #car-3 .smokeContainer #smoke3 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   animation-name: smokeFade3;
   animation-duration: 6s;
   animation-delay: 5s;

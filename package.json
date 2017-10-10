@@ -6,7 +6,8 @@
   "types": "./lib/main.d.ts",
   "license": "",
   "repository": "",
-  "dependencies": [
-    "typescript"
-  ]
+  "dependencies": {
+    "typescript": "^2.5.3",
+    "@types/jquery": "^2.0.34"
+  }
 }
