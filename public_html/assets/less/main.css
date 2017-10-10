@@ -249,7 +249,7 @@
 }
 #car-3 .smokeContainer .smoke {
   position: absolute;
-  z-index: 3;
+  z-index: 999;
   display: block;
   height: 8px;
   width: 8px;

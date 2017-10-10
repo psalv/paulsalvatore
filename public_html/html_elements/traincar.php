@@ -57,12 +57,6 @@
             Let's connect.
         </div>
 
-        <div class="smokeContainer hidden">
-            <div class="smoke" id="smoke1"></div>
-            <div class="smoke" id="smoke2"></div>
-            <div class="smoke" id="smoke3"></div>
-        </div>
-
         <div class="text-center icons">
             <i class="fa fa-linkedin-square" id="linkedinIcon"></i>
             <i class="fa fa-github-square" id="githubIcon"></i>
@@ -77,6 +71,12 @@
             <span id="currentLink"></span>
         </div>
 
+    </div>
+
+    <div class="smokeContainer hidden">
+        <div class="smoke" id="smoke1"></div>
+        <div class="smoke" id="smoke2"></div>
+        <div class="smoke" id="smoke3"></div>
     </div>
 
     <div class="backgroundLeft2"></div>
