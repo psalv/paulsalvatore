@@ -2,20 +2,18 @@ var smokeIcon = $('#smokeIcon');
 var smokeContainer = $('.smokeContainer');
 function placeSmoke() {
     var offset = smokeIcon.offset();
-    console.log(offset);
     $("#smoke1").css({
-        top: offset.top - 170,
+        top: offset.top - 50 - 120,
         left: offset.left - 10
     }).next().css({
-        top: offset.top - 200,
+        top: offset.top - 80 - 120,
         left: offset.left + 40
     }).next().css({
-        top: offset.top - 360,
+        top: offset.top - 140 - 120,
         left: offset.left + 10
     });
 }
 $(function jQueryResize() {
-    console.log('res');
     $(window).resize(function () {
         placeSmoke();
     });
