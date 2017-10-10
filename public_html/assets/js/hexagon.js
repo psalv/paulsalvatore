@@ -1,7 +1,4 @@
 
-
-
-
 /******************************************** HEXAGON SCALING + GRID **************************************************/
 
 var ADJACENT = Math.sqrt(3)/2;  // Used for calculating size of side adjacent to 30degree angle
@@ -50,7 +47,7 @@ function resizeEvent() {
         */
         while(cur < NUM_HEX){
             hexId = '#hex' + cur;
-            var hexIdSh = '#hexSh' + cur;
+            // var hexIdSh = '#hexSh' + cur;
             pos = Math.floor(cur/(2*NUM_COL - 1));
 
             if(secondRow){
@@ -65,7 +62,6 @@ function resizeEvent() {
                     height: HEX_HEIGHT * 1.17,
                     transform: "translate(" + (pos * (HEX_WIDTH+HEX_SIDE_LENGTH + SPACER) - HEX_WIDTH/2) + "," + (i*(HEX_HEIGHT + SPACER) - HEX_HEIGHT/2) + ")"
                 });
-
 
             } else {
                 // $(hexIdSh).attr({

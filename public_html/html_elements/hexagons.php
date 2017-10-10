@@ -45,4 +45,3 @@ If we make each side of the hexagon length r (the hypotenuse) then we can calcul
     ?>
 
 </svg>
-

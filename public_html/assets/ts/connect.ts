@@ -16,7 +16,6 @@ function placeSmoke() {
     });
 }
 
-
 $(function jQueryResize (){
     $(window).resize(function(){
         placeSmoke();
@@ -31,7 +30,6 @@ setInterval(function () {
         smokeContainer.addClass("hidden");
     }
 }, 1000);
-
 
 $('#linkedinIcon').on("mouseover", function () {
     $('#currentLink').html("https://www.linkedin.com/in/paul-salvatore/");
