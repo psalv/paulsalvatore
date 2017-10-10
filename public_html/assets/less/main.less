@@ -1,26 +1,38 @@
 
-@RED: #F44336;
-@HOVERRED: lighten(@RED, 7%);
-@LIGHTRED: #FFCDD2;
-@PURPLE: #9C27B0;
+@RED100: #FFCDD2;
+@RED300: #E57373;
+@RED500: #F44336;
+
+@BLUEACCENT1: #448AFF;
+@BLUEACCENT2: #2979FF;
+
 @GREY: #757575;
 
-.adamina{
-  font-family: 'Adamina', serif;
+.fontStyle{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+
 }
 
-*{
+.scrollable{
+  min-width: 1000px;
+  min-height: 500px;
+
+  @media (max-width: 800px){
+    overflow-x: scroll !important;
+    overflow-y: scroll !important;
+  }
+}
+
+* {
   overflow-x: hidden;
   overflow-y: hidden;
+  .fontStyle;
 }
 
 .cardShadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-html {
-  min-width: 600px !important;
 }
 
 *{
@@ -34,20 +46,20 @@ html {
 
   height: 36px;
   width: 36px;
-  border: 2px solid @RED;
-  font-size: 27px;
+  border: 2px solid @BLUEACCENT1;
+  font-size: 20px;
   border-radius: 50%;
   color: white;
   transition: all 0.5s;
-  background-color: @RED;
+  background-color: @BLUEACCENT1;
   cursor: pointer;
   z-index: 9999 !important;
   position: fixed;
   left: 10px;
 
   &:hover{
-    background-color: @HOVERRED;
-    border: 2px solid @HOVERRED;
+    background-color: @BLUEACCENT2;
+    border: 2px solid @BLUEACCENT2;
 
   }
 }
@@ -56,14 +68,14 @@ html {
   .navButton;
   top: 90%;
   left: 10%;
-  padding: 2px 6px;
+  padding: 5px 9px;
 }
 
 #navigation-right{
   .navButton;
   top: 90%;
   left: 90%;
-  padding: 2px 9px;
+  padding: 5px 11px;
 }
 
 /*============================================ TRAINCAR.PHP =====================================*/
@@ -90,9 +102,8 @@ html {
 
 #car-1{
   width: 100%;
-  .adamina;
   background-color: white;
-  color: @RED;
+  color: @RED500;
   font-size: 2.2em;
 
   .card{
@@ -119,14 +130,14 @@ html {
     left: 15%;
   }
 
-  .backgroundLeft{
-    width: 100vh;
-    height: 100vh;
+  .backgroundRight{
+    width: 100%;
+    height: 100%;
     position: absolute;
     left: 60%;
     top: 0;
     z-index: 0;
-    background-color: @LIGHTRED;
+    background-color: @RED100;
   }
 }
 
@@ -134,10 +145,11 @@ html {
 
 
 #car-2{
+  .scrollable;
+
   width: 100%;
-  .adamina;
   background-color: white;
-  color: @RED;
+  color: @RED500;
 
   .card{
     .cardShadow;
@@ -147,65 +159,57 @@ html {
     position: absolute;
     left: 30% !important;
     background-color: white !important;
-    //
+
     .infoCardContainer{
       height: inherit;
-    //
-    //  .infoRow{
-    //    display: table;
-    //    vertical-align: middle;
-    //    height: inherit;
-    //
-    //    div{
-    //      display: table-cell;
-    //    }
-    //
-    //  }
-
-      //.topRow {
-      //  margin-top: 50vh !important;
-      //}
-
-
     }
 
     .row{
-      margin-left: 2vh;
-      margin-top: 5vh;
-      height: 37vh !important;
+      margin-left: 2%;
+      margin-top: 4%;
+      height: 33% !important;
     }
     .infoCard{
       .cardShadow;
-      //border: 1px solid black;
+      position: relative;
+      z-index: 5;
       width: 20%;
       margin: 2%;
-      height: 30vh !important;
-      //margin-top: 4vh !important;
-      //margin-left: 3% !important;
-      //margin: 2vh;
-      //width: 20vh !important;
+      height: 80% !important;
     }
-
-    //.infoCardTop{
-    //  .infoCard;
-    //  margin-top: 10vh;
-    //}
-    //
-    //.infoCardBottom{
-    //  .infoCard;
-    //  margin-top: 10vh;
-    //}
-
   }
 
-  .backgroundRight{
-    width: 100vh;
-    height: 100vh;
+  .infoData {
+    .cardShadow;
+    background-color: white;
+    position: absolute;
+    width: 25%;
+    height: 80%;
+
+    left: 2.5%;
+    top: 5%;
+  }
+
+  .backgroundLeft{
+    width: 100%;
+    height: 100%;
     position: absolute;
     left: 0;
     top: 0;
     z-index: 0;
-    background-color: @LIGHTRED;
+    background-color: @RED100;
+  }
+
+  .backgroundRight2{
+    .cardShadow;
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 90%;
+    top: 0;
+    z-index: 3;
+    background-color: @RED300;
   }
 }
 
@@ -214,12 +218,13 @@ html {
 
 #car-3{
   width: 100%;
-  .adamina;
   background-color: white;
-  color: @RED;
   font-size: 5em;
 
   .content-block{
+    color: @RED500 !important;
+    position: relative;
+    z-index: 2;
     margin-top: 10%;
   }
 
@@ -233,7 +238,7 @@ html {
 
   a{
     text-decoration: none !important;
-    color: @RED !important;
+    color: @RED500 !important;
   }
 
   #currentLink{
@@ -290,5 +295,17 @@ html {
       animation-delay: 5s;
       animation-iteration-count: infinite;
     }
+  }
+
+  .backgroundLeft2{
+    .cardShadow;
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: @RED300;
+
   }
 }

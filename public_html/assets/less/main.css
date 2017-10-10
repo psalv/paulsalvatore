@@ -1,16 +1,26 @@
-.adamina {
-  font-family: 'Adamina', serif;
+.fontStyle {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+.scrollable {
+  min-width: 1000px;
+  min-height: 500px;
+}
+@media (max-width: 800px) {
+  .scrollable {
+    overflow-x: scroll !important;
+    overflow-y: scroll !important;
+  }
 }
 * {
   overflow-x: hidden;
   overflow-y: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 .cardShadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-html {
-  min-width: 600px !important;
 }
 /*============================================ NAVIGATION.PHP =====================================*/
 .navButton {
@@ -18,66 +28,66 @@ html {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: 36px;
   width: 36px;
-  border: 2px solid #F44336;
-  font-size: 27px;
+  border: 2px solid #448AFF;
+  font-size: 20px;
   border-radius: 50%;
   color: white;
   transition: all 0.5s;
-  background-color: #F44336;
+  background-color: #448AFF;
   cursor: pointer;
   z-index: 9999 !important;
   position: fixed;
   left: 10px;
 }
 .navButton:hover {
-  background-color: #f66358;
-  border: 2px solid #f66358;
+  background-color: #2979FF;
+  border: 2px solid #2979FF;
 }
 #navigation-left {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: 36px;
   width: 36px;
-  border: 2px solid #F44336;
-  font-size: 27px;
+  border: 2px solid #448AFF;
+  font-size: 20px;
   border-radius: 50%;
   color: white;
   transition: all 0.5s;
-  background-color: #F44336;
+  background-color: #448AFF;
   cursor: pointer;
   z-index: 9999 !important;
   position: fixed;
   left: 10px;
   top: 90%;
   left: 10%;
-  padding: 2px 6px;
+  padding: 5px 9px;
 }
 #navigation-left:hover {
-  background-color: #f66358;
-  border: 2px solid #f66358;
+  background-color: #2979FF;
+  border: 2px solid #2979FF;
 }
 #navigation-right {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: 36px;
   width: 36px;
-  border: 2px solid #F44336;
-  font-size: 27px;
+  border: 2px solid #448AFF;
+  font-size: 20px;
   border-radius: 50%;
   color: white;
   transition: all 0.5s;
-  background-color: #F44336;
+  background-color: #448AFF;
   cursor: pointer;
   z-index: 9999 !important;
   position: fixed;
   left: 10px;
   top: 90%;
   left: 90%;
-  padding: 2px 9px;
+  padding: 5px 11px;
 }
 #navigation-right:hover {
-  background-color: #f66358;
-  border: 2px solid #f66358;
+  background-color: #2979FF;
+  border: 2px solid #2979FF;
 }
 /*============================================ TRAINCAR.PHP =====================================*/
 .traincar-car {
@@ -91,7 +101,6 @@ html {
 }
 #car-1 {
   width: 100%;
-  font-family: 'Adamina', serif;
   background-color: white;
   color: #F44336;
   font-size: 2.2em;
@@ -118,9 +127,9 @@ html {
   width: 100%;
   left: 15%;
 }
-#car-1 .backgroundLeft {
-  width: 100vh;
-  height: 100vh;
+#car-1 .backgroundRight {
+  width: 100%;
+  height: 100%;
   position: absolute;
   left: 60%;
   top: 0;
@@ -128,10 +137,17 @@ html {
   background-color: #FFCDD2;
 }
 #car-2 {
+  min-width: 1000px;
+  min-height: 500px;
   width: 100%;
-  font-family: 'Adamina', serif;
   background-color: white;
   color: #F44336;
+}
+@media (max-width: 800px) {
+  #car-2 {
+    overflow-x: scroll !important;
+    overflow-y: scroll !important;
+  }
 }
 #car-2 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -147,34 +163,58 @@ html {
   height: inherit;
 }
 #car-2 .card .row {
-  margin-left: 2vh;
-  margin-top: 5vh;
-  height: 37vh !important;
+  margin-left: 2%;
+  margin-top: 4%;
+  height: 33% !important;
 }
 #car-2 .card .infoCard {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
+  z-index: 5;
   width: 20%;
   margin: 2%;
-  height: 30vh !important;
+  height: 80% !important;
 }
-#car-2 .backgroundRight {
-  width: 100vh;
-  height: 100vh;
+#car-2 .infoData {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+  position: absolute;
+  width: 25%;
+  height: 80%;
+  left: 2.5%;
+  top: 5%;
+}
+#car-2 .backgroundLeft {
+  width: 100%;
+  height: 100%;
   position: absolute;
   left: 0;
   top: 0;
   z-index: 0;
   background-color: #FFCDD2;
 }
+#car-2 .backgroundRight2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 90%;
+  top: 0;
+  z-index: 3;
+  background-color: #E57373;
+}
 #car-3 {
   width: 100%;
-  font-family: 'Adamina', serif;
   background-color: white;
-  color: #F44336;
   font-size: 5em;
 }
 #car-3 .content-block {
+  color: #F44336 !important;
+  position: relative;
+  z-index: 2;
   margin-top: 10%;
 }
 #car-3 i {
@@ -260,4 +300,15 @@ html {
   animation-duration: 6s;
   animation-delay: 5s;
   animation-iteration-count: infinite;
+}
+#car-3 .backgroundLeft2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 25%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-color: #E57373;
 }
