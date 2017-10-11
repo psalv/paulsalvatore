@@ -16,12 +16,18 @@ var windowHeight;
 var windowWidth;
 
 function resizeEvent() {
-    windowWidth = $(this).width();
+    // windowWidth = $(this).width();
+    windowWidth = $('#car-0').width();
     windowHeight = $(this).height();
 
+    /* Use these parameters to make a complete grid fit to the size of the screen */
     HEX_SIDE_LENGTH = Math.floor(windowWidth/(NUM_HEX/2));
     HEX_WIDTH = HEX_SIDE_LENGTH + 2*HEX_SIDE_LENGTH*OPPOSITE;
     HEX_HEIGHT = 2*HEX_SIDE_LENGTH*ADJACENT;
+    //
+    // HEX_SIDE_LENGTH = Math.floor(windowWidth/3.5);
+    // HEX_WIDTH = HEX_SIDE_LENGTH + 2*HEX_SIDE_LENGTH*OPPOSITE;
+    // HEX_HEIGHT = 2*HEX_SIDE_LENGTH*ADJACENT;
 
     var points = (HEX_SIDE_LENGTH*OPPOSITE) + ",0 "+ (HEX_SIDE_LENGTH + HEX_SIDE_LENGTH*OPPOSITE) + ",0 " +
         (HEX_WIDTH) + "," + (HEX_SIDE_LENGTH*ADJACENT) + " " +
@@ -47,31 +53,18 @@ function resizeEvent() {
         */
         while(cur < NUM_HEX){
             hexId = '#hex' + cur;
-            // var hexIdSh = '#hexSh' + cur;
             pos = Math.floor(cur/(2*NUM_COL - 1));
 
             if(secondRow){
-                // $(hexIdSh).attr({
-                //     width: HEX_WIDTH,
-                //     height: HEX_HEIGHT * 1.17,
-                //     transform: "translate(" + (pos * (HEX_WIDTH+HEX_SIDE_LENGTH + SPACER) - HEX_WIDTH/2 + 2) + "," + (i*(HEX_HEIGHT + SPACER) - HEX_HEIGHT/2 + 2) + ")"
-                // });
-
                 $(hexId).attr({
                     width: HEX_WIDTH,
+                    // width: 1000,
+                    // height: HEX_HEIGHT * 1.17,
                     height: HEX_HEIGHT * 1.17,
                     transform: "translate(" + (pos * (HEX_WIDTH+HEX_SIDE_LENGTH + SPACER) - HEX_WIDTH/2) + "," + (i*(HEX_HEIGHT + SPACER) - HEX_HEIGHT/2) + ")"
                 });
 
             } else {
-                // $(hexIdSh).attr({
-                //     width: HEX_WIDTH,
-                //     height: HEX_HEIGHT * 1.17,
-                //     transform: "translate(" + (pos * (HEX_WIDTH+HEX_SIDE_LENGTH + SPACER) + HEX_WIDTH/2 +HEX_SIDE_LENGTH/2 + SPACER/2 - HEX_WIDTH/2 + 2)
-                //     + ","
-                //     + ((i-NUM_COL)*(HEX_HEIGHT + SPACER) + HEX_HEIGHT/2 + SPACER/2 - HEX_HEIGHT/2 + 2) + ")"
-                // });
-
                 $(hexId).attr({
                     width: HEX_WIDTH,
                     height: HEX_HEIGHT * 1.17,
@@ -90,7 +83,7 @@ function resizeEvent() {
 $(function jQueryResize (){
     $(window).resize(function(){
         resizeEvent();
-    })
+    });
 });
 
 

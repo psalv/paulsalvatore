@@ -14,19 +14,12 @@
 }
 
 * {
-  overflow-x: hidden;
-  overflow-y: hidden;
   .fontStyle;
 }
 
 .scrollable{
-  min-width: 1000px;
-  min-height: 500px;
-
-  @media (max-width: 800px){
-    overflow-x: scroll !important;
-    overflow-y: scroll !important;
-  }
+  min-height: 500px !important;
+  overflow-y: scroll !important;
 }
 
 .materialShadow {
@@ -85,6 +78,8 @@
   height: 100%;
   position: absolute;
   display: none;
+
+  min-width: 1200px !important;
 }
 
 .traincar-active{
@@ -94,7 +89,7 @@
 //============================================ TRAINCAR #0 (HEX)
 
 #car-0{
-  //.scrollable;
+  overflow-y: hidden;
 }
 
 //============================================ TRAINCAR #1 (ABOUT ME)
@@ -115,7 +110,7 @@
     position: relative;
   }
   .content-block{
-    margin-top: 10%;
+    padding-top: 10%;
     width: 100%;
   }
 
@@ -132,7 +127,7 @@
   }
 
   .backgroundRight{
-    width: 100%;
+    width: 40%;
     height: 100%;
     position: absolute;
     left: 60%;
@@ -169,13 +164,13 @@
       margin-top: 4%;
       height: 33% !important;
     }
+
     .infoCard{
       .materialShadow;
       position: relative;
       z-index: 5;
-      width: 20%;
-      margin: 2%;
-      height: 80% !important;
+      width: 90%;
+      height: 20%;
     }
   }
 
@@ -183,15 +178,16 @@
     .materialShadow;
     background-color: white;
     position: absolute;
-    width: 25%;
-    height: 80%;
+    z-index: 5;
+    width: 28%;
+    height: 98%;
 
-    left: 2.5%;
-    top: 5%;
+    left: 1%;
+    top: 1%;
   }
 
   .backgroundLeft{
-    width: 100%;
+    width: 30%;
     height: 100%;
     position: absolute;
     left: 0;
@@ -203,7 +199,7 @@
   .backgroundRight2{
     .materialShadow;
 
-    width: 100%;
+    width: 10%;
     height: 100%;
     position: absolute;
     left: 90%;

@@ -41,7 +41,10 @@ include "html_elements/navigation.php";
 
 ?>
 
-
+<!--
+For the hexagons I want to have three hexagons in the center of the page such that they don't touch sides
+I will add the dropshadow in gimp, it will be fine..
+-->
 
 <!--=========================================== JS SCRIPTS ==========================================-->
 <!-- jQuery -->

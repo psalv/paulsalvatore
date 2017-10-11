@@ -1,6 +1,6 @@
 
-<!--<div class="traincar-car traincar-active" data-car-id='0' id="car-0">-->
-<div class="traincar-car" data-car-id='0' id="car-0" style="top: -100%">
+<div class="traincar-car traincar-active" data-car-id='0' id="car-0">
+<!--<div class="traincar-car" data-car-id='0' id="car-0" style="top: -100%">-->
     <?php include "hexagons.php" ?>
 </div>
 
@@ -24,30 +24,42 @@
 
 </div>
 
-<!--<div class="traincar-car" data-car-id='2' id="car-2" style="top: -100%">-->
-<div class="traincar-car traincar-active" data-car-id='2' id="car-2">
+
+<!--
+
+TODO !!! IDEA: REMOVE PACER AND ADD DROPSHADOW AND SPACERS IN GIMP
+
+Current plan:
+
+Have horizontal strips (5) running in the white region, each representing a different card-prelude
+When you click on these strips, a FULL-SIZE card will appear in the left section, outlining more details
+The card will appear by sliding up from the bottom, if there is a card currently there than it will need to slide
+up out of sight at the same time.
+
+Cards:
+1) iCONECT
+2) Developers' Foundation
+3) Other work
+4) A personal project
+5) Things about me (guitar
+
+-->
+
+<div class="traincar-car" data-car-id='2' id="car-2" style="top: -100%">
+<!--<div class="traincar-car traincar-active" data-car-id='2' id="car-2">-->
     <div class="card infoCardContainer">
-<!--        test text 1<br>-->
-<!--        test text 2<br>-->
-<!--        test text 3<br>-->
-<!--        <div class="row">-->
-<!--            <div class="col-xs-3 infoCard">a</div>-->
-<!--            <div class="col-xs-3 infoCard">b</div>-->
-<!--            <div class="col-xs-3 infoCard">c</div>-->
-<!--            <div class="col-xs-3 infoCard">d</div>-->
-<!--        </div>-->
-<!--        <div class="row">-->
-<!--            <div class="col-xs-3 infoCard">e</div>-->
-<!--            <div class="col-xs-3 infoCard">f</div>-->
-<!--            <div class="col-xs-3 infoCard">g</div>-->
-<!--            <div class="col-xs-3 infoCard">h</div>-->
-<!--        </div>-->
+        <div class="infoCard" id="card-0"></div>
+        <div class="infoCard" id="card-1"></div>
+        <div class="infoCard" id="card-2"></div>
+        <div class="infoCard" id="card-3"></div>
+        <div class="infoCard" id="card-4"></div>
     </div>
+
+    <div class="infoData hidden"></div>
 
     <div class="backgroundLeft"></div>
     <div class="backgroundRight2"></div>
 
-<!--    <div class="infoData"></div>-->
 </div>
 
 <div class="traincar-car" data-car-id='3' id="car-3" style="top: -100%">
