@@ -16,7 +16,6 @@ var windowHeight;
 var windowWidth;
 
 function resizeEvent() {
-    // windowWidth = $(this).width();
     windowWidth = $('#car-0').width();
     windowHeight = $(this).height();
 
@@ -24,10 +23,6 @@ function resizeEvent() {
     HEX_SIDE_LENGTH = Math.floor(windowWidth/(NUM_HEX/2));
     HEX_WIDTH = HEX_SIDE_LENGTH + 2*HEX_SIDE_LENGTH*OPPOSITE;
     HEX_HEIGHT = 2*HEX_SIDE_LENGTH*ADJACENT;
-    //
-    // HEX_SIDE_LENGTH = Math.floor(windowWidth/3.5);
-    // HEX_WIDTH = HEX_SIDE_LENGTH + 2*HEX_SIDE_LENGTH*OPPOSITE;
-    // HEX_HEIGHT = 2*HEX_SIDE_LENGTH*ADJACENT;
 
     var points = (HEX_SIDE_LENGTH*OPPOSITE) + ",0 "+ (HEX_SIDE_LENGTH + HEX_SIDE_LENGTH*OPPOSITE) + ",0 " +
         (HEX_WIDTH) + "," + (HEX_SIDE_LENGTH*ADJACENT) + " " +
@@ -58,8 +53,6 @@ function resizeEvent() {
             if(secondRow){
                 $(hexId).attr({
                     width: HEX_WIDTH,
-                    // width: 1000,
-                    // height: HEX_HEIGHT * 1.17,
                     height: HEX_HEIGHT * 1.17,
                     transform: "translate(" + (pos * (HEX_WIDTH+HEX_SIDE_LENGTH + SPACER) - HEX_WIDTH/2) + "," + (i*(HEX_HEIGHT + SPACER) - HEX_HEIGHT/2) + ")"
                 });

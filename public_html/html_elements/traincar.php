@@ -1,4 +1,9 @@
 
+
+<!-- TODO !!!
+ For the hexagons I want to have three hexagons in the center of the page such that they don't touch sides
+I will add the dropshadow in gimp, it will be fine..
+-->
 <div class="traincar-car traincar-active" data-car-id='0' id="car-0">
 <!--<div class="traincar-car" data-car-id='0' id="car-0" style="top: -100%">-->
     <?php include "hexagons.php" ?>
@@ -26,9 +31,7 @@
 
 
 <!--
-
-TODO !!! IDEA: REMOVE PACER AND ADD DROPSHADOW AND SPACERS IN GIMP
-
+TODO !!!
 Current plan:
 
 Have horizontal strips (5) running in the white region, each representing a different card-prelude
