@@ -20,32 +20,32 @@
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: 36px;
   width: 36px;
-  border: 2px solid #448AFF;
+  border: 2px solid #FF6E40;
   font-size: 20px;
   border-radius: 50%;
   color: white;
   transition: all 0.5s;
-  background-color: #448AFF;
+  background-color: #FF6E40;
   cursor: pointer;
   z-index: 9999 !important;
   position: fixed;
   left: 10px;
 }
 .navButton:hover {
-  background-color: #2979FF;
-  border: 2px solid #2979FF;
+  background-color: #FF3D00;
+  border: 2px solid #FF3D00;
 }
 #navigation-left {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: 36px;
   width: 36px;
-  border: 2px solid #448AFF;
+  border: 2px solid #FF6E40;
   font-size: 20px;
   border-radius: 50%;
   color: white;
   transition: all 0.5s;
-  background-color: #448AFF;
+  background-color: #FF6E40;
   cursor: pointer;
   z-index: 9999 !important;
   position: fixed;
@@ -55,20 +55,20 @@
   padding: 5px 9px;
 }
 #navigation-left:hover {
-  background-color: #2979FF;
-  border: 2px solid #2979FF;
+  background-color: #FF3D00;
+  border: 2px solid #FF3D00;
 }
 #navigation-right {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: 36px;
   width: 36px;
-  border: 2px solid #448AFF;
+  border: 2px solid #FF6E40;
   font-size: 20px;
   border-radius: 50%;
   color: white;
   transition: all 0.5s;
-  background-color: #448AFF;
+  background-color: #FF6E40;
   cursor: pointer;
   z-index: 9999 !important;
   position: fixed;
@@ -78,8 +78,8 @@
   padding: 5px 11px;
 }
 #navigation-right:hover {
-  background-color: #2979FF;
-  border: 2px solid #2979FF;
+  background-color: #FF3D00;
+  border: 2px solid #FF3D00;
 }
 /*============================================ TRAINCAR.PHP =====================================*/
 .traincar-car {
@@ -100,7 +100,7 @@
   overflow-y: scroll !important;
   width: 100%;
   background-color: white;
-  color: #F44336;
+  color: #2196F3;
   font-size: 2.2em;
 }
 #car-1 .card {
@@ -132,14 +132,14 @@
   left: 60%;
   top: 0;
   z-index: 0;
-  background-color: #FFCDD2;
+  background-color: #BBDEFB;
 }
 #car-2 {
   min-height: 500px !important;
   overflow-y: scroll !important;
   width: 100%;
   background-color: white;
-  color: #F44336;
+  color: #2196F3;
 }
 #car-2 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -185,7 +185,7 @@
   left: 0;
   top: 0;
   z-index: 0;
-  background-color: #FFCDD2;
+  background-color: #BBDEFB;
 }
 #car-2 .backgroundRight2 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -196,7 +196,7 @@
   left: 90%;
   top: 0;
   z-index: 3;
-  background-color: #E57373;
+  background-color: #64B5F6;
 }
 #car-3 {
   min-height: 500px !important;
@@ -206,7 +206,7 @@
   font-size: 5em;
 }
 #car-3 .content-block {
-  color: #F44336 !important;
+  color: #2196F3 !important;
   position: relative;
   z-index: 2;
   margin-top: 10%;
@@ -219,7 +219,7 @@
 }
 #car-3 a {
   text-decoration: none !important;
-  color: #F44336 !important;
+  color: #2196F3 !important;
 }
 #car-3 #currentLink {
   font-size: 20px !important;
@@ -310,5 +310,5 @@
   left: 0;
   top: 0;
   z-index: 1;
-  background-color: #E57373;
+  background-color: #64B5F6;
 }
