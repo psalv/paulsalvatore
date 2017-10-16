@@ -4,8 +4,8 @@
  For the hexagons I want to have three hexagons in the center of the page such that they don't touch sides
 I will add the dropshadow in gimp, it will be fine..
 -->
-<div class="traincar-car traincar-active" data-car-id='0' id="car-0">
-<!--<div class="traincar-car" data-car-id='0' id="car-0" style="top: -100%">-->
+<!--<div class="traincar-car traincar-active" data-car-id='0' id="car-0">-->
+<div class="traincar-car" data-car-id='0' id="car-0" style="top: -100%">
     <?php include "hexagons.php" ?>
 </div>
 
@@ -48,8 +48,8 @@ Cards:
 
 -->
 
-<div class="traincar-car" data-car-id='2' id="car-2" style="top: -100%">
-<!--<div class="traincar-car traincar-active" data-car-id='2' id="car-2">-->
+<!--<div class="traincar-car" data-car-id='2' id="car-2" style="top: -100%">-->
+<div class="traincar-car traincar-active" data-car-id='2' id="car-2">
     <div class="card infoCardContainer">
         <div class="infoCard" id="card-0"></div>
         <div class="infoCard" id="card-1"></div>
@@ -58,7 +58,11 @@ Cards:
         <div class="infoCard" id="card-4"></div>
     </div>
 
-    <div class="infoData hidden"></div>
+    <div class="infoData hidden" id="infoCard-0"></div>
+    <div class="infoData hidden" id="infoCard-1"></div>
+    <div class="infoData hidden" id="infoCard-2"></div>
+    <div class="infoData hidden" id="infoCard-3"></div>
+    <div class="infoData hidden" id="infoCard-4"></div>
 
     <div class="backgroundLeft"></div>
     <div class="backgroundRight2"></div>

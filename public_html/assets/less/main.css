@@ -176,6 +176,9 @@
   left: 1%;
   top: 1%;
 }
+#car-2 .infoDataActive {
+  display: block !important;
+}
 #car-2 .backgroundLeft {
   width: 30%;
   height: 100%;

@@ -37,10 +37,10 @@ function changeTrainCar(currentCar, nextCar, direction) {
     if (vertical) {
         currentCar.stop().animate({
             top: currentCarMove
-        });
+        }, 750);
         nextCar.stop().animate({
             top: '0'
-        });
+        }, 750);
     }
     else {
         currentCar.stop().animate({
