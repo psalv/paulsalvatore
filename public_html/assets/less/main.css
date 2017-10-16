@@ -100,7 +100,7 @@
   width: 100%;
   background-color: white;
   color: #2196F3;
-  font-size: 2.2em;
+  font-size: 2.8em;
 }
 #car-1 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -111,7 +111,7 @@
   position: relative;
 }
 #car-1 .content-block {
-  padding-top: 10%;
+  padding-top: 15%;
   width: 100%;
 }
 #car-1 .cycleWords {
