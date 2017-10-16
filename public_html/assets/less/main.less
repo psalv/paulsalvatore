@@ -15,11 +15,12 @@
 
 * {
   .fontStyle;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
 }
 
 .scrollable{
   min-height: 500px !important;
-  overflow-y: scroll !important;
 }
 
 .materialShadow {
@@ -78,8 +79,6 @@
   height: 100%;
   position: absolute;
   display: none;
-
-  min-width: 1200px !important;
 }
 
 .traincar-active{
@@ -89,7 +88,11 @@
 //============================================ TRAINCAR #0 (HEX)
 
 #car-0{
-  overflow-y: hidden;
+  //overflow-y: hidden;
+
+  #svgHex{
+    height: 99% !important;
+  }
 }
 
 //============================================ TRAINCAR #1 (ABOUT ME)

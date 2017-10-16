@@ -19,18 +19,8 @@ If we make each side of the hexagon length r (the hypotenuse) then we can calcul
         </clipPath>
     </defs>
 
-    <?php
-
-    $NUM_HEXAGONS = 10;
-
-    // A better way would be to give the images identical names differing by the end number from 1 to n, n being the total number of images.
-    // This allows us to do what we did with the hex, although isn't as easily changeable (it is much cleaner though).
-    $imageLocations = ['http://via.placeholder.com/1000x1000'];
-    for($i = 0; $i < $NUM_HEXAGONS; $i++){
-        echo "<image xlink:href='" . $imageLocations[0] . "' clip-path='url(#hexClip)' class='svgHex' id='hex" . $i . "'></image>";
-
-    }
-
-    ?>
+    <image xlink:href='assets/img/hex1.png' clip-path='url(#hexClip)' class='svgHex' id='hex0'></image>
+    <image xlink:href='assets/img/hex1.png' clip-path='url(#hexClip)' class='svgHex' id='hex1'></image>
+    <image xlink:href='assets/img/hex1.png' clip-path='url(#hexClip)' class='svgHex' id='hex2'></image>
 
 </svg>

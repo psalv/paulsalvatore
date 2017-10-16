@@ -5,10 +5,11 @@
 * {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
 }
 .scrollable {
   min-height: 500px !important;
-  overflow-y: scroll !important;
 }
 .materialShadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -87,17 +88,15 @@
   height: 100%;
   position: absolute;
   display: none;
-  min-width: 1200px !important;
 }
 .traincar-active {
   display: block !important;
 }
-#car-0 {
-  overflow-y: hidden;
+#car-0 #svgHex {
+  height: 99% !important;
 }
 #car-1 {
   min-height: 500px !important;
-  overflow-y: scroll !important;
   width: 100%;
   background-color: white;
   color: #2196F3;
@@ -136,7 +135,6 @@
 }
 #car-2 {
   min-height: 500px !important;
-  overflow-y: scroll !important;
   width: 100%;
   background-color: white;
   color: #2196F3;
@@ -200,7 +198,6 @@
 }
 #car-3 {
   min-height: 500px !important;
-  overflow-y: scroll !important;
   width: 100%;
   background-color: white;
   font-size: 5em;
