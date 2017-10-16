@@ -76,7 +76,9 @@ function moveCar(key) {
 }
 $('body').on('keydown', function (e) {
     var key = e.which || e.keyCode;
-    moveCar(key);
+    if (key == 37 || key == 39) {
+        moveCar(key);
+    }
 });
 $('#navigation-left').on('click', function () {
     moveCar(37);

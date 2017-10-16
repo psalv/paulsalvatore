@@ -60,6 +60,7 @@ include "html_elements/navigation.php";
 <script src="assets/ts/traincar.js" type="text/javascript"></script>
 <script src="assets/ts/changingText.js" type="text/javascript"></script>
 <script src="assets/ts/connect.js" type="text/javascript"></script>
+<script src="assets/ts/infodata.js" type="text/javascript"></script>
 
 
 

@@ -58,11 +58,11 @@ Cards:
         <div class="infoCard" id="card-4"></div>
     </div>
 
-    <div class="infoData hidden" id="infoCard-0"></div>
-    <div class="infoData hidden" id="infoCard-1"></div>
-    <div class="infoData hidden" id="infoCard-2"></div>
-    <div class="infoData hidden" id="infoCard-3"></div>
-    <div class="infoData hidden" id="infoCard-4"></div>
+    <div class="infoData hidden" data-card-id='0' id="infoCard-0"></div>
+    <div class="infoData hidden" data-card-id='1' id="infoCard-1"></div>
+    <div class="infoData hidden" data-card-id='2' id="infoCard-2"></div>
+    <div class="infoData hidden" data-card-id='3' id="infoCard-3"></div>
+    <div class="infoData hidden" data-card-id='4' id="infoCard-4"></div>
 
     <div class="backgroundLeft"></div>
     <div class="backgroundRight2"></div>
