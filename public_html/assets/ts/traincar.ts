@@ -40,11 +40,11 @@ function changeTrainCar(currentCar: any, nextCar: any, direction: String): void{
     if(vertical) {
         currentCar.stop().animate({
             top: currentCarMove
-        });
+        }, 750);
 
         nextCar.stop().animate({
             top: '0'
-        });
+        }, 750);
     } else {
         currentCar.stop().animate({
             left: currentCarMove

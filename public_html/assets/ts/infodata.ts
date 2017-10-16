@@ -1,4 +1,6 @@
 
+
+// TODO !! NEED TO ADD THE infoDATAACTIVE class so I know which one is currentlty beign displayed!!!
 function changeInfoData(currentData: any, nextData: any, direction: String): void{
     let currentCarMove: String;
     let vertical = false;
