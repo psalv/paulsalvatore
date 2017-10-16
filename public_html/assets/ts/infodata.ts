@@ -1,6 +1,5 @@
 
 
-// TODO !! NEED TO ADD THE infoDATAACTIVE class so I know which one is currentlty beign displayed!!!
 function changeInfoData(currentData: any, nextData: any, direction: String): void{
     currentData.removeClass("infoData-active");
     nextData.addClass("infoData-active");
@@ -35,9 +34,9 @@ function changeInfoData(currentData: any, nextData: any, direction: String): voi
         top: '1%'
     }, 750);
 
-    // setTimeout(function () {
-    //     currentData.addClass('hidden');
-    // }, 750);
+    setTimeout(function () {
+        currentData.addClass('hidden');
+    }, 750);
 }
 
 
