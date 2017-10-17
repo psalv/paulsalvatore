@@ -23,8 +23,6 @@ function changeInfoData(currentData: any, nextData: any, direction: String): voi
             break;
     }
 
-    console.log(currentCardMove);
-
     nextData.removeClass('hidden');
     currentData.stop().animate({
         top: currentCardMove

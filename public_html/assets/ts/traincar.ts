@@ -95,3 +95,25 @@ $('#navigation-left').on('click', function () {
 $('#navigation-right').on('click', function () {
     moveCar(39);
 });
+
+$('#direction-tooltip').on('click', function () {
+    this.setAttribute("class", "hidden");
+});
+
+function toolTipResize(){
+    let width = $(this).width();
+    let tooltip = $('#direction-tooltip');
+    let widthTip = tooltip.width();
+    tooltip.css("top", (width - widthTip/2).toString() + "px");
+}
+$(function jQueryResize (){
+    $(window).resize(function(){
+        toolTipResize();
+    });
+});
+
+$(function () {
+    toolTipResize();
+    $('#direction-tooltip').fadeIn(3500);
+
+});

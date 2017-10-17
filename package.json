@@ -7,7 +7,7 @@
   "license": "",
   "repository": "",
   "dependencies": {
-    "typescript": "^2.5.3",
-    "@types/jquery": "^2.0.34"
+    "@types/jquery": "^2.0.34",
+    "typescript": "^2.5.3"
   }
 }
