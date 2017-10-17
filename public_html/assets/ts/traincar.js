@@ -88,17 +88,13 @@ $('#navigation-right').on('click', function () {
     moveCar(39);
 });
 $('#direction-tooltip').on('click', function () {
-    this.setAttribute("class", "hidden");
+    $('#direction-tooltip').fadeOut(1000);
 });
 function toolTipResize() {
     var width = $(this).width();
     var tooltip = $('#direction-tooltip');
     var widthTip = tooltip.width();
-
-    // console.log(width);
-    // console.log(widthTip);
-    console.log(((width - widthTip)/2).toString() + "px");
-    tooltip.css("left", ((width - widthTip)/2).toString() + "px");
+    tooltip.css("left", ((width - widthTip) / 2).toString() + "px");
 }
 $(function jQueryResize() {
     $(window).resize(function () {

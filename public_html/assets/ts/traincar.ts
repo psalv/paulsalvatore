@@ -84,6 +84,7 @@ function moveCar(key: number){
 $('body').on('keydown', function (e) {
     let key = e.which || e.keyCode;
     if(key == 37 || key == 39){
+        $('#direction-tooltip').fadeOut(1000);
         moveCar(key);
     }
 });
@@ -97,14 +98,14 @@ $('#navigation-right').on('click', function () {
 });
 
 $('#direction-tooltip').on('click', function () {
-    this.setAttribute("class", "hidden");
+    $('#direction-tooltip').fadeOut(1000);
 });
 
 function toolTipResize(){
     let width = $(this).width();
     let tooltip = $('#direction-tooltip');
     let widthTip = tooltip.width();
-    tooltip.css("top", (width - widthTip/2).toString() + "px");
+    tooltip.css("left", ((width - widthTip)/2).toString() + "px");
 }
 $(function jQueryResize (){
     $(window).resize(function(){
@@ -114,6 +115,5 @@ $(function jQueryResize (){
 
 $(function () {
     toolTipResize();
-    $('#direction-tooltip').fadeIn(3500);
-
+    $('#direction-tooltip').fadeIn(2000);
 });

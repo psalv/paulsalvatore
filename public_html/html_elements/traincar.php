@@ -67,6 +67,11 @@ Cards:
     <div class="backgroundLeft"></div>
     <div class="backgroundRight2"></div>
 
+<!--    <div id="card-tooltip">-->
+<!--        <i class="fa fa-close"></i>-->
+<!--        You can use the up and down arrows to navigate content.-->
+<!--    </div>-->
+
 </div>
 
 <div class="traincar-car" data-car-id='3' id="car-3" style="top: -100%">
