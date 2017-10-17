@@ -1,4 +1,9 @@
+var first = true;
+var infoCar = $("#car-2");
 function changeTrainCar(currentCar, nextCar, direction) {
+    if (currentCar == infoCar) {
+        $('#card-tooltip').fadeOut(1000);
+    }
     var currentCarMove;
     var vertical = false;
     switch (direction) {
@@ -53,22 +58,24 @@ function changeTrainCar(currentCar, nextCar, direction) {
     setTimeout(function () {
         currentCar.removeClass('traincar-active');
     }, 750);
+    if (first && nextCar == infoCar) {
+        first = false;
+        $('#card-tooltip').fadeIn(2000);
+    }
 }
 function moveCar(key) {
     if (key == 37) {
         // left
         var currentCar = $('.traincar-active').first();
         currentCar.promise().done(function () {
-            // TODO ! Was experimenting with ways to prevent the bugginess of fast traincar changes.
-            // currentCar = $('.traincar-active').first();
             var currentPosition = parseInt(this.attr('data-car-id'));
             changeTrainCar(this, $('#car-' + ((((currentPosition - 1) % 4) + 4) % 4).toString()), 'left');
         });
     }
     else if (key == 39) {
+        // right
         var currentCar = $('.traincar-active').first();
         currentCar.promise().done(function () {
-            // currentCar = $('.traincar-active').first();
             var currentPosition = parseInt(this.attr('data-car-id'));
             changeTrainCar(this, $('#car-' + ((((currentPosition + 1) % 4) + 4) % 4).toString()), 'right');
         });
@@ -92,9 +99,12 @@ $('#direction-tooltip').on('click', function () {
 });
 function toolTipResize() {
     var width = $(this).width();
-    var tooltip = $('#direction-tooltip');
-    var widthTip = tooltip.width();
-    tooltip.css("left", ((width - widthTip) / 2).toString() + "px");
+    var tooltip1 = $('#direction-tooltip');
+    var tooltip2 = $('#card-tooltip');
+    var widthTip1 = tooltip1.width();
+    var widthTip2 = tooltip2.width();
+    tooltip1.css("left", ((width - widthTip1) / 2).toString() + "px");
+    tooltip2.css("left", ((width - widthTip2) / 2).toString() + "px");
 }
 $(function jQueryResize() {
     $(window).resize(function () {

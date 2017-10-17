@@ -1,7 +1,14 @@
 
+let first = true;
+let infoCar = $("#car-2");
+
 function changeTrainCar(currentCar: any, nextCar: any, direction: String): void{
+    if(currentCar == infoCar){
+        $('#card-tooltip').fadeOut(1000);
+    }
     let currentCarMove: String;
     let vertical = false;
+
     switch(direction){
         case 'up':
             currentCarMove = '-100%';
@@ -57,6 +64,11 @@ function changeTrainCar(currentCar: any, nextCar: any, direction: String): void{
     setTimeout(function () {
         currentCar.removeClass('traincar-active');
     }, 750);
+
+    if(first && nextCar == infoCar){
+        first = false;
+        $('#card-tooltip').fadeIn(2000);
+    }
 }
 
 function moveCar(key: number){
@@ -64,17 +76,14 @@ function moveCar(key: number){
         // left
         let currentCar = $('.traincar-active').first();
         currentCar.promise().done(function (this) {
-
-            // TODO ! Was experimenting with ways to prevent the bugginess of fast traincar changes.
-            // currentCar = $('.traincar-active').first();
             let currentPosition = parseInt(this.attr('data-car-id'));
             changeTrainCar(this, $('#car-' + ((((currentPosition - 1) % 4) + 4) % 4).toString()), 'left');
         });
 
     } else if (key == 39){
+        // right
         let currentCar = $('.traincar-active').first();
         currentCar.promise().done(function (this) {
-            // currentCar = $('.traincar-active').first();
             let currentPosition = parseInt(this.attr('data-car-id'));
             changeTrainCar(this, $('#car-' + ((((currentPosition + 1) % 4) + 4) % 4).toString()), 'right');
         });
@@ -103,9 +112,12 @@ $('#direction-tooltip').on('click', function () {
 
 function toolTipResize(){
     let width = $(this).width();
-    let tooltip = $('#direction-tooltip');
-    let widthTip = tooltip.width();
-    tooltip.css("left", ((width - widthTip)/2).toString() + "px");
+    let tooltip1 = $('#direction-tooltip');
+    let tooltip2 = $('#card-tooltip');
+    let widthTip1 = tooltip1.width();
+    let widthTip2 = tooltip2.width();
+    tooltip1.css("left", ((width - widthTip1)/2).toString() + "px");
+    tooltip2.css("left", ((width - widthTip2)/2).toString() + "px");
 }
 $(function jQueryResize (){
     $(window).resize(function(){

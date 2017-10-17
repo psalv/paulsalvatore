@@ -71,20 +71,4 @@ $('body').on('keydown', function (e) {
         moveCard(key);
     }
 });
-//
-// function cardToolTipResize(){
-//     let width = $(this).width();
-//     let tooltip = $('#card-tooltip');
-//     let widthTip = tooltip.width();
-//     tooltip.css("top", (width - widthTip/2).toString() + "px");
-// }
-// $(function jQueryResize (){
-//     $(window).resize(function(){
-//         cardToolTipResize();
-//     });
-// });
-//
-// $(function () {
-//     cardToolTipResize();
-//     $('#card-tooltip').fadeIn(3500);
-// });
+

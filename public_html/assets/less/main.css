@@ -209,6 +209,19 @@
   z-index: 3;
   background-color: #64B5F6;
 }
+#car-2 #card-tooltip {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #FF6E40;
+  z-index: 11;
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  top: 91%;
+  padding: 5px;
+  opacity: 0.9;
+  display: none;
+}
 #car-3 {
   min-height: 500px !important;
   width: 100%;
