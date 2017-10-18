@@ -184,6 +184,10 @@ I will add the dropshadow in gimp, it will be fine..
         Easily create q cards! Just put them into JSON format first
         () Commit Timer (HTML CSS JS MeSpeakAPI)
         No one likes losing work, this will help you to stay on top of commits.
+        () Western chapter
+        SVG images, worked alongside designer
+        () guitar recording
+        I mentioned that I played guitar, here's a little something as a thank you for checking out my work!
 
     </div>
 
