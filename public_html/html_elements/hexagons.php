@@ -19,8 +19,8 @@ If we make each side of the hexagon length r (the hypotenuse) then we can calcul
         </clipPath>
     </defs>
 
-    <image xlink:href='assets/img/hex_0.png' clip-path='url(#hexClip)' class='svgHex' id='hex0'></image>
-    <image xlink:href='assets/img/hex_1.png' clip-path='url(#hexClip)' class='svgHex' id='hex1'></image>
-    <image xlink:href='assets/img/hex_2.png' clip-path='url(#hexClip)' class='svgHex' id='hex2'></image>
+    <image xlink:href='assets/img/hexagons/hex_0.png' clip-path='url(#hexClip)' class='svgHex' id='hex0'></image>
+    <image xlink:href='assets/img/hexagons/hex_1.png' clip-path='url(#hexClip)' class='svgHex' id='hex1'></image>
+    <image xlink:href='assets/img/hexagons/hex_2.png' clip-path='url(#hexClip)' class='svgHex' id='hex2'></image>
 
 </svg>
