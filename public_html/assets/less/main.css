@@ -219,6 +219,19 @@
   height: 98%;
   left: 1%;
   top: 1%;
+  padding: 2%;
+  overflow-y: scroll !important;
+}
+#car-2 .infoCard .context {
+  font-weight: 700;
+  margin-top: 20px;
+  font-size: 1.3em !important;
+}
+#car-2 .info1 img {
+  width: 50% !important;
+}
+#car-2 .info1 .leftPadding {
+  padding-left: 30%;
 }
 #car-2 .backgroundLeft {
   width: 30%;
