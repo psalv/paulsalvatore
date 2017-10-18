@@ -38,7 +38,7 @@ I will add the dropshadow in gimp, it will be fine..
         <div class="infoCardTitle text-center" id="card-0">
             <div class="parentCenter">
                 <div class="childCenter text-center">
-                    <img class="mainImage" src="assets/img/iconectlogo_web_419x92.png">
+                    <img class="mainImage" src="assets/img/work/iconectLogo.png">
                 </div>
             </div>
         </div>
@@ -47,21 +47,21 @@ I will add the dropshadow in gimp, it will be fine..
                 <div class="col-xs-4">
                     <div class="parentCenter">
                         <div class="childCenter">
-                            <img src="assets/img/df.png">
+                            <img src="assets/img/work/developersFoundationLogo.png">
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-4">
                     <div class="parentCenter">
                         <div class="childCenter">
-                            <img src="assets/img/lcc.png">
+                            <img src="assets/img/work/lccLogo.png">
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-4">
                     <div class="parentCenter">
                         <div class="childCenter">
-                            <img src="assets/img/ttl-westernlogo.svg">
+                            <img src="assets/img/work/westernLogo.svg">
                         </div>
                     </div>
                 </div>
@@ -76,7 +76,7 @@ I will add the dropshadow in gimp, it will be fine..
     <!-- Scrolling cards -->
     <div class="infoCard hidden info1" data-card-id='0' id="infoCard-0">
         <div class="row text-center">
-            <img class="mainImage" src="assets/img/XERAlogo_web_463x170.png">
+            <img class="mainImage" src="assets/img/work/xeraLogo.png">
         </div>
 
         <div class="row">
@@ -118,29 +118,33 @@ I will add the dropshadow in gimp, it will be fine..
     </div>
 
     <div class="infoCard hidden" data-card-id='1' id="infoCard-1">
-        Developers' Foundation<br>
+        <h3 class="text-center">Developers' Foundation</h3>
         <div class="context">London, Ontario. 2016 - 2017</div><br>
-        Worked with non-profit clients delivering high-quality web solutions.
+        Worked with non-profit clients delivering high-quality web solutions.<br><br>
 
-        Project highlight: Western Chapter, Blank Bootstrap, Dolly
+        Project highlight: Western Chapter, Blank Bootstrap, Dolly<br><br>
 
         <b>Skills Developed:</b><br>
-        - desing, worked with designer
-        - teamwork, pair-programming
+        - desing, worked with designer<br>
+        - teamwork, pair-programming<br>
 
 
 
-        London Children's Connection
+        <h3 class="text-center">London Children's Connection</h3>
+        <div class="context">London, Ontario. 2016 - 2017</div><br>
+
         Performed the role of IT support as well as pioneered their social media program (link to facebook)
 
         <b>Skills Developed:</b><br>
         - Consumer relations, through content management
         - hardware troubleshooting
-        - communication, effectively explaining techniocal details in laymans terms
+        - communication, effectively explaining technical details in laymans terms
 
-        Western University
-        Wroedk in a biochemistry lab under the direction of Dr. Murray Junop (link).
-        Researched methods of in vivo DNA repair using Deinococus radiodurans.
+        <h3 class="text-center">Western University</h3>
+        <div class="context">London, Ontario. 2015 - 2016</div><br>
+        <!-- https://junoplab.wordpress.com/ -->
+        Worked in a biochemistry lab under the direction of <a href="https://junoplab.wordpress.com/" target="_blank">Dr. Murray Junop.</a>
+        Researched methods of in vivo DNA repair using Deinoccocus radiodurans.
 
         <b>Skills Developed:</b><br>
         - Communication, showing results
