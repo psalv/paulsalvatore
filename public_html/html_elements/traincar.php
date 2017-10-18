@@ -4,8 +4,8 @@
  For the hexagons I want to have three hexagons in the center of the page such that they don't touch sides
 I will add the dropshadow in gimp, it will be fine..
 -->
-<div class="traincar-car traincar-active" data-car-id='0' id="car-0">
-<!--<div class="traincar-car" data-car-id='0' id="car-0" style="top: -100%">-->
+<!--<div class="traincar-car traincar-active" data-car-id='0' id="car-0">-->
+<div class="traincar-car" data-car-id='0' id="car-0" style="top: -100%">
     <?php include "hexagons.php" ?>
 </div>
 
@@ -48,21 +48,58 @@ Cards:
 
 -->
 
-<div class="traincar-car" data-car-id='2' id="car-2" style="top: -100%">
-<!--<div class="traincar-car traincar-active" data-car-id='2' id="car-2">-->
-    <div class="card infoCardContainer">
-        <div class="infoCard" id="card-0"></div>
-        <div class="infoCard" id="card-1"></div>
-        <div class="infoCard" id="card-2"></div>
-        <div class="infoCard" id="card-3"></div>
-        <div class="infoCard" id="card-4"></div>
+<!--<div class="traincar-car" data-car-id='2' id="car-2" style="top: -100%">-->
+<div class="traincar-car traincar-active" data-car-id='2' id="car-2">
+
+    <!-- Card selection -->
+    <div class="card infoCardTitleContainer">
+        <div class="infoCardTitle text-center" id="card-0">
+            <div class="parentCenter">
+                <div class="childCenter text-center">
+                    <img class="mainImage" src="assets/img/iconectlogo_web_419x92.png">
+                </div>
+            </div>
+        </div>
+        <div class="infoCardTitle" id="card-1">
+            <div class="thirdsRow row text-center">
+                <div class="col-xs-4">
+                    <div class="parentCenter">
+                        <div class="childCenter">
+                            <img src="assets/img/df.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="parentCenter">
+                        <div class="childCenter">
+                            <img src="assets/img/lcc.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="parentCenter">
+                        <div class="childCenter">
+                            <img src="assets/img/ttl-westernlogo.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="infoCardTitle" id="card-2"></div>
+        <div class="infoCardTitle" id="card-3"></div>
+        <div class="infoCardTitle" id="card-4"></div>
     </div>
 
-    <div class="infoData hidden" data-card-id='0' id="infoCard-0"></div>
-    <div class="infoData hidden" data-card-id='1' id="infoCard-1"></div>
-    <div class="infoData hidden" data-card-id='2' id="infoCard-2"></div>
-    <div class="infoData hidden" data-card-id='3' id="infoCard-3"></div>
-    <div class="infoData hidden" data-card-id='4' id="infoCard-4"></div>
+    <!-- Scrolling cards -->
+    <div class="infoCard hidden" data-card-id='0' id="infoCard-0">
+        <img src="assets/img/XERAlogo_web_463x170.png">
+    </div>
+
+    <div class="infoCard hidden" data-card-id='1' id="infoCard-1"></div>
+    <div class="infoCard hidden" data-card-id='2' id="infoCard-2"></div>
+    <div class="infoCard hidden" data-card-id='3' id="infoCard-3"></div>
+    <div class="infoCard hidden" data-card-id='4' id="infoCard-4"></div>
 
     <div class="backgroundLeft"></div>
     <div class="backgroundRight2"></div>

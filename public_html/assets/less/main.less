@@ -28,6 +28,23 @@
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.materialShadowDarker{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.38);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.38);
+}
+
+.parentCenter{
+  height: 100% !important;
+  display: table;
+  width: 100%;
+}
+
+.childCenter{
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+
 *{
   //border: solid 1px red !important;
 }
@@ -159,8 +176,11 @@
   background-color: white;
   color: @BLUE500;
 
+
+  // CARD SELECTION
   .card{
     .materialShadow;
+
     width: 70%;
     height: 100%;
     z-index: 2;
@@ -168,26 +188,51 @@
     left: 30% !important;
     background-color: white !important;
 
-    .infoCardContainer{
+    .infoCardTitleContainer{
       height: inherit;
     }
 
-    .row{
-      margin-left: 2%;
-      margin-top: 4%;
-      height: 33% !important;
-    }
-
-    .infoCard{
+    .infoCardTitle{
       .materialShadow;
+      cursor: pointer;
+
+      &:hover{
+        .materialShadowDarker;
+      }
+
       position: relative;
       z-index: 5;
       width: 90%;
       height: 20%;
+
+      .mainImage{
+        width: 40%;
+      }
+
+      .thirdsRow{
+        padding-left: 3%;
+        padding-right: 3%;
+
+        height: 100% !important;
+
+        .col-xs-4{
+          height: 100% !important;
+        }
+
+        img{
+          width: 70%;
+        }
+      }
+    }
+
+    #card-0{
+      padding:auto;
     }
   }
 
-  .infoData {
+
+  // INFO CARDS
+  .infoCard {
     .materialShadow;
     background-color: white;
     position: absolute;
@@ -198,6 +243,9 @@
     left: 1%;
     top: 1%;
   }
+
+
+
 
   .backgroundLeft{
     width: 30%;
@@ -221,18 +269,18 @@
     background-color: @BLUE300;
   }
 
-  #card-tooltip{
-    .materialShadow;
-    background-color: @ORANGEACCENT1;
-    z-index: 11;
-    cursor: pointer;
-    color: white;
-    position: absolute;
-    top: 91%;
-    padding: 5px;
-    opacity: 0.9;
-    display: none;
-  }
+  //#card-tooltip{
+  //  .materialShadow;
+  //  background-color: @ORANGEACCENT1;
+  //  z-index: 11;
+  //  cursor: pointer;
+  //  color: white;
+  //  position: absolute;
+  //  top: 91%;
+  //  padding: 5px;
+  //  opacity: 0.9;
+  //  display: none;
+  //}
 }
 
 
