@@ -1,4 +1,5 @@
 
+let NUM_CARDS = 4;
 
 function changeInfoData(currentData: any, nextData: any, direction: String): void{
     currentData.removeClass("infoData-active");
@@ -47,7 +48,7 @@ function moveCard(key: number){
             currentCar.promise().done(function (this) {
 
                 let currentPosition = parseInt(this.attr('data-card-id'));
-                changeInfoData(this, $('#infoCard-' + ((((currentPosition - 1) % 5) + 5) % 5).toString()), 'up');
+                changeInfoData(this, $('#infoCard-' + ((((currentPosition - 1) % NUM_CARDS) + NUM_CARDS) % NUM_CARDS).toString()), 'up');
             });
         }
 
@@ -59,7 +60,7 @@ function moveCard(key: number){
             currentCar.promise().done(function (this) {
 
                 let currentPosition = parseInt(this.attr('data-card-id'));
-                changeInfoData(this, $('#infoCard-' + ((((currentPosition + 1) % 5) + 5) % 5).toString()), 'down');
+                changeInfoData(this, $('#infoCard-' + ((((currentPosition + 1) % NUM_CARDS) + NUM_CARDS) % NUM_CARDS).toString()), 'down');
             });
         }
     }

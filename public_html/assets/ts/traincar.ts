@@ -1,6 +1,7 @@
 
 let first = true;
 let infoCar = $("#car-2");
+let NUM_CARS = 4;
 
 function changeTrainCar(currentCar: any, nextCar: any, direction: String): void{
     if(currentCar == infoCar){
@@ -77,7 +78,7 @@ function moveCar(key: number){
         let currentCar = $('.traincar-active').first();
         currentCar.promise().done(function (this) {
             let currentPosition = parseInt(this.attr('data-car-id'));
-            changeTrainCar(this, $('#car-' + ((((currentPosition - 1) % 4) + 4) % 4).toString()), 'left');
+            changeTrainCar(this, $('#car-' + ((((currentPosition - 1) % NUM_CARS) + NUM_CARS) % NUM_CARS).toString()), 'left');
         });
 
     } else if (key == 39){
@@ -85,7 +86,7 @@ function moveCar(key: number){
         let currentCar = $('.traincar-active').first();
         currentCar.promise().done(function (this) {
             let currentPosition = parseInt(this.attr('data-car-id'));
-            changeTrainCar(this, $('#car-' + ((((currentPosition + 1) % 4) + 4) % 4).toString()), 'right');
+            changeTrainCar(this, $('#car-' + ((((currentPosition + 1) % NUM_CARS) + NUM_CARS) % NUM_CARS).toString()), 'right');
         });
     }
 }

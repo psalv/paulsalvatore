@@ -1,5 +1,6 @@
 var first = true;
 var infoCar = $("#car-2");
+var NUM_CARS = 4;
 function changeTrainCar(currentCar, nextCar, direction) {
     if (currentCar == infoCar) {
         $('#card-tooltip').fadeOut(1000);
@@ -69,7 +70,7 @@ function moveCar(key) {
         var currentCar = $('.traincar-active').first();
         currentCar.promise().done(function () {
             var currentPosition = parseInt(this.attr('data-car-id'));
-            changeTrainCar(this, $('#car-' + ((((currentPosition - 1) % 4) + 4) % 4).toString()), 'left');
+            changeTrainCar(this, $('#car-' + ((((currentPosition - 1) % NUM_CARS) + NUM_CARS) % NUM_CARS).toString()), 'left');
         });
     }
     else if (key == 39) {
@@ -77,7 +78,7 @@ function moveCar(key) {
         var currentCar = $('.traincar-active').first();
         currentCar.promise().done(function () {
             var currentPosition = parseInt(this.attr('data-car-id'));
-            changeTrainCar(this, $('#car-' + ((((currentPosition + 1) % 4) + 4) % 4).toString()), 'right');
+            changeTrainCar(this, $('#car-' + ((((currentPosition + 1) % NUM_CARS) + NUM_CARS) % NUM_CARS).toString()), 'right');
         });
     }
 }
