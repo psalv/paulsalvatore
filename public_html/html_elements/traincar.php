@@ -189,35 +189,69 @@ I will add the dropshadow in gimp, it will be fine..
         Blank Bootstrap modularily designed to be able to grow with the organization, using PHP based components to suit a variety of purposes.
     </div>
 
-    <div class="infoCard hidden" data-card-id='3' id="infoCard-3">
-        <div class="row">
-            <div class="col-xs-3">
-                <!-- IMAGE GOES HERE -->
-                <img src="">
-            </div>
+    <div class="infoCard hidden info3" data-card-id='3' id="infoCard-3">
 
-            <div class="col-xs-9">
-                <!--- Content goes here -->
-            </div>
+        <div class="row description-top">
+            <a href="//github.com/Developers-Foundation/western-chapter" target="_blank"><h4>Developers' Foundation Western Chapter</h4></a>
+            Developed from scratch alongside our designer.<br>
+            <div class="smaller">HTML, LESS, PHP, JS, SVG</div>
+        </div>
+        <div class="row">
+            <img src="assets/img/projects/westernChapterApp.png">
         </div>
 
+        <div class="row description">
+            <a href="//github.com/psalv/Snake" target="_blank"><h4>Snake</h4></a>
+            A 2D snake clone built entirely through JFrame.<br>
+            <div class="smaller">Java</div>
+        </div>
+        <div class="row">
+            <img src="assets/img/projects/snakeApp.png">
+        </div>
 
-        <!--
-        (img screenshot) SNAKE (Java)
-        A 2D snake clone built entirely through JFrame
-        () HEXAGONS (JS PHP)
-        A dynamic and modular grid of SVG hexagons
-        () LSSS (HTML CSS JS)
-        Chrome extension delivering words, artwork and nature to your tabs
-        () JSON-to-Q (HTML CSS JS)
-        Easily create q cards! Just put them into JSON format first
-        () Commit Timer (HTML CSS JS MeSpeakAPI)
-        No one likes losing work, this will help you to stay on top of commits.
-        () Western chapter
-        SVG images, worked alongside designer
-        () guitar recording
-        I mentioned that I played guitar, here's a little something as a thank you for checking out my work!
-        -->
+        <div class="row description">
+            <a href="//chrome.google.com/webstore/detail/learn-something-see-somet/hjilmolkopjkokfofafnlgbphdfopldo" target="_blank"><h4>Learn Something, See Something</h4></a>
+            Chrome extension delivering words, artwork and nature to your tabs.<br>
+            <div class="smaller">HTML, CSS, JS</div>
+        </div>
+        <div class="row">
+            <img src="assets/img/projects/lsssApp.png">
+        </div>
+
+        <div class="row description">
+            <a href="//json-to-q.herokuapp.com/" target="_blank"><h4>JSON-to-Q</h4></a>
+            Easily create q cards! Just put them into JSON format first.<br>
+            <div class="smaller">HTML, CSS, JS</div>
+        </div>
+        <div class="row">
+            <img src="assets/img/projects/jsonToQApp.png">
+        </div>
+
+        <div class="row description">
+            <a href="//github.com/psalv/SVG_Hexagonal_Grid" target="_blank"><h4>SVG Hexagons</h4></a>
+            A dynamic and modular grid of SVG hexagons.<br>
+            <div class="smaller">PHP, JS</div>
+        </div>
+        <div class="row">
+            <img src="assets/img/projects/hexagonApp.png">
+        </div>
+
+        <div class="row description">
+            <a href="//commitproductivitytimer.herokuapp.com/" target="_blank"><h4>Commit Timer</h4></a>
+            No one likes losing work, this will help you to stay on top of commits.<br>
+            <div class="smaller">HTML, CSS, JS, MeSpeak</div>
+        </div>
+        <div class="row">
+            <img src="assets/img/projects/commitTimerApp.png">
+        </div>
+
+        <div class="row description">
+            <h4>A Song!</h4>
+            Thank you for checking out my projects, I recorded this for you!<br>
+        </div>
+        <div class="row">
+            <!--            <img src="assets/img/projects/lsssApp.png">-->
+        </div>
 
     </div>
 

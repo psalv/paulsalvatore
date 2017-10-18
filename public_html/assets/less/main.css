@@ -233,6 +233,19 @@
 #car-2 .info1 .leftPadding {
   padding-left: 30%;
 }
+#car-2 .info3 img {
+  width: 100% !important;
+}
+#car-2 .info3 .description {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#car-2 .info3 .description-top {
+  margin-bottom: 15px;
+}
+#car-2 .info3 .smaller {
+  font-size: 0.7em;
+}
 #car-2 .backgroundLeft {
   width: 30%;
   height: 100%;
