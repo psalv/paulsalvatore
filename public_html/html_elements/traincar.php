@@ -30,24 +30,6 @@ I will add the dropshadow in gimp, it will be fine..
 </div>
 
 
-<!--
-TODO !!!
-Current plan:
-
-Have horizontal strips (5) running in the white region, each representing a different card-prelude
-When you click on these strips, a FULL-SIZE card will appear in the left section, outlining more details
-The card will appear by sliding up from the bottom, if there is a card currently there than it will need to slide
-up out of sight at the same time.
-
-Cards:
-1) iCONECT
-2) Developers' Foundation
-3) Other work
-4) Personal projects
-5) hings about me (guitarT
-
--->
-
 <!--<div class="traincar-car" data-car-id='2' id="car-2" style="top: -100%">-->
 <div class="traincar-car traincar-active" data-car-id='2' id="car-2">
 
@@ -200,7 +182,6 @@ Cards:
         No one likes losing work, this will help you to stay on top of commits.
 
     </div>
-    <div class="infoCard hidden" data-card-id='4' id="infoCard-4"></div>
 
     <div class="backgroundLeft"></div>
     <div class="backgroundRight2"></div>

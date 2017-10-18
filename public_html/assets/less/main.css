@@ -186,7 +186,7 @@
   position: relative;
   z-index: 5;
   width: 90%;
-  height: 20%;
+  height: 25%;
 }
 #car-2 .card .infoCardTitle:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.38);
