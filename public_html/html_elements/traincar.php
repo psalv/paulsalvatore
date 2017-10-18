@@ -82,14 +82,14 @@ I will add the dropshadow in gimp, it will be fine..
         <div class="row">
             <div class="context">London, Ontario. 2017</div><br>
 
-            Participated in a scrum agile development lifecycle developing the <a href="https://www.iconect.com/products/xera/" target="_blank">Xera eDiscovery product.</a><br><br>
+            Participated in a scrum agile development lifecycle developing the <a href="//www.iconect.com/products/xera/" target="_blank">Xera eDiscovery product.</a><br><br>
 
             <b>Quality Assurance</b><br>
             I learned the ins and outs of the product by testing and creating bug and feature tickets.<br><br>
 
             <b>Automated Testing</b><br>
             Developed unit tests using Jest + Enzyme for the entire React front end of the product. Explored automated UI testing using TestCafe.<br><br>
-            <a href="https://medium.com/@paulanthonysalvatore/jest-my-summer-approaching-various-problems-with-jest-enzyme-fc1ad992aece" target="_blank">You can read about my hurdles and solutions here.</a><br><br>
+            <a href="//medium.com/@paulanthonysalvatore/jest-my-summer-approaching-various-problems-with-jest-enzyme-fc1ad992aece" target="_blank">You can read about my hurdles and solutions here.</a><br><br>
 
             Some numbers from my work: <br><br>
             <div class="row">
@@ -118,19 +118,23 @@ I will add the dropshadow in gimp, it will be fine..
     </div>
 
     <div class="infoCard hidden" data-card-id='1' id="infoCard-1">
-        <h3 class="text-center">Developers' Foundation</h3>
+
+        <h3 class="text-center">Developers' Foundation(TODO LINK)</h3>
         <div class="context">London, Ontario. 2016 - 2017</div><br>
         Worked with non-profit clients delivering high-quality web solutions.<br><br>
 
         Project highlight: Western Chapter, Blank Bootstrap, Dolly<br><br>
 
         <b>Skills Developed:</b><br>
-        - desing, worked with designer<br>
-        - teamwork, pair-programming<br>
+        - Design, worked alongside our designer to meet clients' needs<br>
+        - Teamwork, participated in pair-programming<br>
+        - Full stack web development<br>
+        - Communication, through direct contact with clients and members of team<br>
 
 
 
-        <h3 class="text-center">London Children's Connection</h3>
+
+        <h3 class="text-center">London Children's Connection(TODO LINK)</h3>
         <div class="context">London, Ontario. 2016 - 2017</div><br>
 
         Performed the role of IT support as well as pioneered their social media program (link to facebook)
@@ -142,38 +146,63 @@ I will add the dropshadow in gimp, it will be fine..
 
         <h3 class="text-center">Western University</h3>
         <div class="context">London, Ontario. 2015 - 2016</div><br>
-        <!-- https://junoplab.wordpress.com/ -->
-        Worked in a biochemistry lab under the direction of <a href="https://junoplab.wordpress.com/" target="_blank">Dr. Murray Junop.</a>
-        Researched methods of in vivo DNA repair using Deinoccocus radiodurans.
+        Worked in a biochemistry lab under the direction of <a href="//junoplab.wordpress.com/" target="_blank">Dr. Murray Junop.</a><br>
+        Researched methods of in vivo DNA repair using the Deinoccocus radiodurans bacterium.
 
         <b>Skills Developed:</b><br>
-        - Communication, showing results
-        - Solving complex problems, working in novel areas of interest
-        - Planning and recording keeping
+        - Communication, displayed and explained complex data<br>
+        - Solving complex problems, worked in novel areas of interest<br>
+        - Planning and recording keeping, essential for successful research<br>
 
     </div>
 
     <div class="infoCard hidden" data-card-id='2' id="infoCard-2">
-        Metrognome(img)
+        <div class="infoCardTitle text-center" id="card-0">
+            <div class="parentCenter">
+                <div class="childCenter text-center">
+                    <img class="mainImage" src="assets/img/work/metrognomeApp.png">
+                </div>
+            </div>
+        </div>
 
-        For musicians looking to speed up!
+        <b>Metrognome</b> is an application for musicians looking to speed up!<br><br>
 
-        I couldn't find a godo metrognome that gradually increased pace so this was my solution.
+        After being frustrated by metrognomes that didn't have a feature to gradually increase speed I created one myself<br>
 
-        Set the rate at which you want to increase and play! Has optional recording functionality for when you play something great.
+        <b>Skills Developed:</b><br>
+        - Java + JFrame<br>
+        - Multithreading<br>
+        - Audio file management<br>
 
-        Technical Skills: Multithreading, audio file management
 
+        <div class="infoCardTitle text-center" id="card-0">
+            <div class="parentCenter">
+                <div class="childCenter text-center">
+                    <img class="mainImage" src="assets/img/work/blankBootstrap.png">
+                </div>
+            </div>
+        </div>
 
-        Blank Bootstrap (img)
+        <b>Blank Bootstrap</b> is an open source project developed by Developers' Foundation.<br>
+        The project provides a starting point for new developers, giving them the tools to quickly launch a web application using <a href="//heroku.com">Heroku.</a><br><br>
 
-        Open source project developed by Developers' Foundation for new members.
-        Gives you everythign you need to launch a web site using Heroku.
-
-        Modularly deisgned to be able to grow with the organization, using PHP based components to suit a varierty of purposes.
+        Blank Bootstrap modularily designed to be able to grow with the organization, using PHP based components to suit a variety of purposes.
     </div>
 
     <div class="infoCard hidden" data-card-id='3' id="infoCard-3">
+        <div class="row">
+            <div class="col-xs-3">
+                <!-- IMAGE GOES HERE -->
+                <img src="">
+            </div>
+
+            <div class="col-xs-9">
+                <!--- Content goes here -->
+            </div>
+        </div>
+
+
+        <!--
         (img screenshot) SNAKE (Java)
         A 2D snake clone built entirely through JFrame
         () HEXAGONS (JS PHP)
@@ -188,6 +217,7 @@ I will add the dropshadow in gimp, it will be fine..
         SVG images, worked alongside designer
         () guitar recording
         I mentioned that I played guitar, here's a little something as a thank you for checking out my work!
+        -->
 
     </div>
 
