@@ -42,6 +42,7 @@ I will add the dropshadow in gimp, it will be fine..
                 </div>
             </div>
         </div>
+
         <div class="infoCardTitle" id="card-1">
             <div class="thirdsRow row text-center">
                 <div class="col-xs-4">
@@ -66,12 +67,31 @@ I will add the dropshadow in gimp, it will be fine..
                     </div>
                 </div>
             </div>
-
         </div>
-        <div class="infoCardTitle" id="card-2"></div>
+
+        <div class="infoCardTitle" id="card-2">
+            <div class="thirdsRow row text-center">
+                <div class="col-xs-6">
+                    <div class="parentCenter">
+                        <div class="childCenter">
+                            <img src="assets/img/projects/metrognomeTitle.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="parentCenter">
+                        <div class="childCenter">
+<!--                            <img src="assets/img/work/lccLogo.png">-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <div class="infoCardTitle" id="card-3">
             <div class="parentCenter">
-                <div class="childCenter text-center">
+                <div class="font700 childCenter text-center">
                     PROJECTS
                 </div>
             </div>
@@ -124,7 +144,7 @@ I will add the dropshadow in gimp, it will be fine..
 
     <div class="infoCard hidden" data-card-id='1' id="infoCard-1">
 
-        <h3 class="text-center">Developers' Foundation(TODO LINK)</h3>
+        <h3 class="text-center">Developers' Foundation</h3>
         <div class="context">London, Ontario. 2016 - 2017</div><br>
         Worked with non-profit clients delivering high-quality web solutions.<br><br>
 
@@ -139,20 +159,20 @@ I will add the dropshadow in gimp, it will be fine..
 
 
 
-        <h3 class="text-center">London Children's Connection(TODO LINK)</h3>
+        <h3 class="text-center">London Children's Connection</h3>
         <div class="context">London, Ontario. 2016 - 2017</div><br>
 
-        Performed the role of IT support as well as pioneered their social media program (link to facebook)
+        Performed the role of IT support as well as <a href="//www.facebook.com/LCCLondon/?rf=279434815475286">pioneered their social media program.</a><br><br>
 
         <b>Skills Developed:</b><br>
-        - Consumer relations, through content management
-        - hardware troubleshooting
-        - communication, effectively explaining technical details in laymans terms
+        - Consumer Relations, during my year managing all social media content for the organization<br>
+        - Troubleshooting systems and hardware<br>
+        - Communicating technical language to people without technical backgrounds<br><br>
 
         <h3 class="text-center">Western University</h3>
         <div class="context">London, Ontario. 2015 - 2016</div><br>
-        Worked in a biochemistry lab under the direction of <a href="//junoplab.wordpress.com/" target="_blank">Dr. Murray Junop.</a><br>
-        Researched methods of in vivo DNA repair using the Deinoccocus radiodurans bacterium.
+        Worked in a biochemistry lab under the direction of <a href="//junoplab.wordpress.com/" target="_blank">Dr. Murray Junop.</a><br><br>
+        Researched methods of in vivo DNA repair using the Deinoccocus radiodurans bacterium.<br><br>
 
         <b>Skills Developed:</b><br>
         - Communication, displayed and explained complex data<br>
@@ -161,18 +181,18 @@ I will add the dropshadow in gimp, it will be fine..
 
     </div>
 
-    <div class="infoCard hidden" data-card-id='2' id="infoCard-2">
+    <div class="infoCard hidden info2" data-card-id='2' id="infoCard-2">
         <div class="infoCardTitle text-center" id="card-0">
             <div class="parentCenter">
                 <div class="childCenter text-center">
-                    <img class="mainImage" src="assets/img/work/metrognomeApp.png">
+                    <img class="mainImage" src="assets/img/projects/metrognomeApp.png">
                 </div>
             </div>
         </div>
 
-        <b>Metrognome</b> is an application for musicians looking to speed up!<br><br>
+        <a href="//github.com/psalv/Metrognome"><b>Metrognome</b></a> is an application for musicians looking to speed up!<br><br>
 
-        After being frustrated by metrognomes that didn't have a feature to gradually increase speed I created one myself<br>
+        After being frustrated by metrognomes that didn't have a feature to gradually increase speed I created one myself.<br><br>
 
         <b>Skills Developed:</b><br>
         - Java + JFrame<br>
@@ -188,10 +208,22 @@ I will add the dropshadow in gimp, it will be fine..
             </div>
         </div>
 
-        <b>Blank Bootstrap</b> is an open source project developed by Developers' Foundation.<br>
+        <div class="infoCardTitle text-center" id="card-0">
+            <div class="parentCenter">
+                <div class="childCenter text-center">
+                    <img class="mainImage" src="assets/img/projects/blankBootstrapApp.png">
+                </div>
+            </div>
+        </div>
+        <a href="//github.com/Developers-Foundation/blank-bootstrap"><b>Blank Bootstrap</b></a> is an open source project developed by Developers' Foundation.<br><br>
         The project provides a starting point for new developers, giving them the tools to quickly launch a web application using <a href="//heroku.com">Heroku.</a><br><br>
 
-        Blank Bootstrap modularily designed to be able to grow with the organization, using PHP based components to suit a variety of purposes.
+        Blank Bootstrap modularily designed to be able to grow with the organization, using PHP based components to suit a variety of purposes.<br><br>
+
+        <b>Skills Developed:</b><br>
+        - Teamwork, we developed this project using pair-programing<br>
+        - Thinking modularly<br>
+        - Writing thorough documentation<br>
     </div>
 
     <div class="infoCard hidden info3" data-card-id='3' id="infoCard-3">
@@ -262,7 +294,7 @@ I will add the dropshadow in gimp, it will be fine..
         <div class="row description">
             <h4>A Song!</h4>
             Thank you for checking out my projects, I recorded this for you!<br>
-            <div class="smaller">2015 American Professional Telecaster</div>
+            <div class="smaller">For Django - Joe Pass</div>
         </div>
         <div class="row">
             <div id="togglePlay"><i class="fa fa-play" id="playState"></i></div>
