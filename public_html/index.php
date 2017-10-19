@@ -41,6 +41,16 @@ include "html_elements/navigation.php";
 
 ?>
 
+
+<!--
+TODO:
+
+-change font size for lets connect to match TC #1
+-change font and style of PROJECTS
+-experiment with different fonts
+-set a minimum width, try to make it that when it is that width the body is scrollable
+-->
+
 <!--=========================================== JS SCRIPTS ==========================================-->
 <!-- jQuery -->
 <script src="assets/js/jquery.min.js" type="text/javascript"></script>
