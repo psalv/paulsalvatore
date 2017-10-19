@@ -31,7 +31,7 @@
 
     <!-- Card selection -->
     <div class="card infoCardTitleContainer">
-        <div class="infoCardTitle text-center" id="card-0">
+        <div class="infoCardTitle text-center" id="card-0" data-card-id="0">
             <div class="parentCenter">
                 <div class="childCenter text-center">
                     <img class="mainImage" src="assets/img/work/iconectLogo.png">
@@ -39,7 +39,7 @@
             </div>
         </div>
 
-        <div class="infoCardTitle" id="card-1">
+        <div class="infoCardTitle" id="card-1" data-card-id="1">
             <div class="thirdsRow row text-center">
                 <div class="col-xs-4">
                     <div class="parentCenter">
@@ -65,7 +65,7 @@
             </div>
         </div>
 
-        <div class="infoCardTitle" id="card-2">
+        <div class="infoCardTitle" id="card-2" data-card-id="2">
             <div class="thirdsRow row text-center">
                 <div class="col-xs-6">
                     <div class="parentCenter">
@@ -85,7 +85,7 @@
         </div>
 
 
-        <div class="infoCardTitle" id="card-3">
+        <div class="infoCardTitle" id="card-3" data-card-id="3">
             <div class="parentCenter">
                 <div class="font700 childCenter text-center">
                     PROJECTS
@@ -196,15 +196,6 @@
         - Java + JFrame<br>
         - Multithreading<br>
         - Audio file management<br>
-
-
-        <div class="infoCardTitle text-center" id="card-0">
-            <div class="parentCenter">
-                <div class="childCenter text-center">
-                    <img class="mainImage" src="assets/img/work/blankBootstrap.png">
-                </div>
-            </div>
-        </div>
 
         <div class="infoCardTitle text-center" id="card-0">
             <div class="parentCenter">

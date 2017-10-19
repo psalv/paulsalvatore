@@ -33,8 +33,8 @@
 }
 
 .materialShadowDarker{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.38);
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.38);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.38) !important;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.38) !important;
 }
 
 .parentCenter{
@@ -180,6 +180,9 @@
   background-color: white;
   color: @BLUE500;
 
+  .infoDataTitle-active{
+    .materialShadowDarker;
+  }
 
   // CARD SELECTION
   .card{
