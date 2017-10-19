@@ -246,6 +246,10 @@
 #car-2 .info3 .smaller {
   font-size: 0.7em;
 }
+#car-2 .info3 #togglePlay {
+  cursor: pointer !important;
+  margin-left: 15px;
+}
 #car-2 .backgroundLeft {
   width: 30%;
   height: 100%;

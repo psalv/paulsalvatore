@@ -219,6 +219,15 @@ I will add the dropshadow in gimp, it will be fine..
         </div>
 
         <div class="row description">
+            <a href="//github.com/psalv/paulsalvatore" target="_blank"><h4>paulsalvatore.io</h4></a>
+            Designed and built entirely by myself.<br>
+            <div class="smaller">HTML, PHP, TypeScript, LESS, SVG</div>
+        </div>
+        <div class="row">
+            <img src="assets/img/projects/paulSalvatoreApp.png">
+        </div>
+
+        <div class="row description">
             <a href="//json-to-q.herokuapp.com/" target="_blank"><h4>JSON-to-Q</h4></a>
             Easily create q cards! Just put them into JSON format first.<br>
             <div class="smaller">HTML, CSS, JS</div>
@@ -248,9 +257,13 @@ I will add the dropshadow in gimp, it will be fine..
         <div class="row description">
             <h4>A Song!</h4>
             Thank you for checking out my projects, I recorded this for you!<br>
+            <div class="smaller">2015 American Professional Telecaster</div>
         </div>
         <div class="row">
-            <!--            <img src="assets/img/projects/lsssApp.png">-->
+            <audio class="" id="song">
+                <source src="assets/audio/Django.m4a" type="audio/m4a">
+            </audio>
+            <div id="togglePlay"><i class="fa fa-play" id="playState"></i></div>
         </div>
 
     </div>
