@@ -32,13 +32,13 @@ setInterval(function () {
 }, 1000);
 
 $('#linkedinIcon').on("mouseover", function () {
-    $('#currentLink').html("https://www.linkedin.com/in/paul-salvatore/");
+    $('#currentLink').html("");
 }).on('click', function () {
     window.open( "https://www.linkedin.com/in/paul-salvatore/" , '_blank' );
 });
 
 $('#githubIcon').on("mouseover", function () {
-    $('#currentLink').html("https://github.com/psalv");
+    $('#currentLink').html("");
 }).on('click', function () {
     window.open( "https://github.com/psalv" , '_blank' );
 });
@@ -48,7 +48,7 @@ $('#mailIcon').on("mouseover", function () {
 });
 
 $('#googleIcon').on("mouseover", function () {
-    $('#currentLink').html("f o r t h c o m i n g");
+    $('#currentLink').html("");
 }).on('click', function () {
     window.open( "https://google.ca" , '_blank' );
 });

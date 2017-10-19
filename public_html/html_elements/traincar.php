@@ -1,7 +1,7 @@
 
 
-<!--<div class="traincar-car traincar-active" data-car-id='0' id="car-0">-->
-<div class="traincar-car" data-car-id='0' id="car-0" style="top: -100%">
+<div class="traincar-car traincar-active" data-car-id='0' id="car-0">
+<!--<div class="traincar-car" data-car-id='0' id="car-0" style="top: -100%">-->
     <?php include "hexagons.php" ?>
 </div>
 
@@ -26,8 +26,8 @@
 </div>
 
 
-<!--<div class="traincar-car" data-car-id='2' id="car-2" style="top: -100%">-->
-<div class="traincar-car traincar-active" data-car-id='2' id="car-2">
+<div class="traincar-car" data-car-id='2' id="car-2" style="top: -100%">
+<!--<div class="traincar-car traincar-active" data-car-id='2' id="car-2">-->
 
     <!-- Card selection -->
     <div class="card infoCardTitleContainer">
@@ -254,7 +254,7 @@
         </div>
 
         <div class="row description">
-            <a href="//www.innovativearts.com/" target="_blank"><h4>Bluepay Forms</h4></a>
+            <a href="//www.bluepay.com/" target="_blank"><h4>Bluepay Forms</h4></a>
             Created a series of custom Bluepay forms for Innovative Arts Inc., processing > $100k.<br>
             <div class="smaller">HTML, CSS, JS</div>
         </div>
