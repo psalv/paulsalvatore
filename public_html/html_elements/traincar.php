@@ -69,8 +69,13 @@ I will add the dropshadow in gimp, it will be fine..
 
         </div>
         <div class="infoCardTitle" id="card-2"></div>
-        <div class="infoCardTitle" id="card-3"></div>
-        <div class="infoCardTitle" id="card-4"></div>
+        <div class="infoCardTitle" id="card-3">
+            <div class="parentCenter">
+                <div class="childCenter text-center">
+                    PROJECTS
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Scrolling cards -->
@@ -260,9 +265,6 @@ I will add the dropshadow in gimp, it will be fine..
             <div class="smaller">2015 American Professional Telecaster</div>
         </div>
         <div class="row">
-            <audio class="" id="song">
-                <source src="assets/audio/Django.m4a" type="audio/m4a">
-            </audio>
             <div id="togglePlay"><i class="fa fa-play" id="playState"></i></div>
         </div>
 

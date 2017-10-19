@@ -20,7 +20,7 @@
 
     <!-- Custom Fonts -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Roboto:100,300,500,700" rel="stylesheet">
 
 
     <!-- Custom CSS -->
