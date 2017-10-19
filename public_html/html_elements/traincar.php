@@ -254,12 +254,12 @@
         </div>
 
         <div class="row description">
-            <a href="//json-to-q.herokuapp.com/" target="_blank"><h4>JSON-to-Q</h4></a>
-            Easily create q cards! Just put them into JSON format first.<br>
+            <a href="//www.innovativearts.com/" target="_blank"><h4>Bluepay Forms</h4></a>
+            Created a series of custom Bluepay forms for Innovative Arts Inc., processing > $100k.<br>
             <div class="smaller">HTML, CSS, JS</div>
         </div>
         <div class="row">
-            <img src="assets/img/projects/jsonToQApp.png">
+            <img src="assets/img/projects/innovativeApp.png">
         </div>
 
         <div class="row description">
@@ -272,12 +272,12 @@
         </div>
 
         <div class="row description">
-            <a href="//www.innovativearts.com/" target="_blank"><h4>Bluepay Forms</h4></a>
-            Created a series of custom Bluepay forms for Innovative Arts Inc., processing > $100k.<br>
+            <a href="//json-to-q.herokuapp.com/" target="_blank"><h4>JSON-to-Q</h4></a>
+            Easily create q cards! Just put them into JSON format first.<br>
             <div class="smaller">HTML, CSS, JS</div>
         </div>
         <div class="row">
-            <img src="assets/img/projects/innovativeApp.png">
+            <img src="assets/img/projects/jsonToQApp.png">
         </div>
 
         <div class="row description">
