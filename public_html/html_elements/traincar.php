@@ -77,7 +77,7 @@
                 <div class="col-xs-6">
                     <div class="parentCenter">
                         <div class="childCenter">
-<!--                            <img src="assets/img/work/lccLogo.png">-->
+                            <img src="assets/img/projects/blankBootstrapTitle.png">
                         </div>
                     </div>
                 </div>
@@ -144,7 +144,7 @@
         <div class="context">London, Ontario. 2016 - 2017</div><br>
         Worked with non-profit clients delivering high-quality web solutions.<br><br>
 
-        Project highlight: Western Chapter, Blank Bootstrap, Dolly<br><br>
+        Engaged in an  organizational mentorship program centered around full-stack development.<br><br>
 
         <b>Skills Developed:</b><br>
         - Design, worked alongside our designer to meet clients' needs<br>
@@ -158,7 +158,7 @@
         <h3 class="text-center">London Children's Connection</h3>
         <div class="context">London, Ontario. 2016 - 2017</div><br>
 
-        Performed the role of IT support as well as <a href="//www.facebook.com/LCCLondon/?rf=279434815475286">pioneered their social media program.</a><br><br>
+        Performed the role of IT support as well as <a href="//www.facebook.com/LCCLondon/?rf=279434815475286" target="_blank">pioneered their social media program.</a><br><br>
 
         <b>Skills Developed:</b><br>
         - Consumer Relations, during my year managing all social media content for the organization<br>
@@ -186,9 +186,11 @@
             </div>
         </div>
 
-        <a href="//github.com/psalv/Metrognome"><b>Metrognome</b></a> is an application for musicians looking to speed up!<br><br>
+        <a href="//github.com/psalv/Metrognome" target="_blank"><b>Metrognome</b></a> is an application for musicians looking to speed up!<br><br>
 
         After being frustrated by metrognomes that didn't have a feature to gradually increase speed I created one myself.<br><br>
+
+        There's a recording feature just in case you play something that you love.<br><br>
 
         <b>Skills Developed:</b><br>
         - Java + JFrame<br>
@@ -211,8 +213,8 @@
                 </div>
             </div>
         </div>
-        <a href="//github.com/Developers-Foundation/blank-bootstrap"><b>Blank Bootstrap</b></a> is an open source project developed by Developers' Foundation.<br><br>
-        The project provides a starting point for new developers, giving them the tools to quickly launch a web application using <a href="//heroku.com">Heroku.</a><br><br>
+        <a href="//github.com/Developers-Foundation/blank-bootstrap" target="_blank"><b>Blank Bootstrap</b></a> is an open source project developed by Developers' Foundation.<br><br>
+        The project provides a starting point for new developers, giving them the tools to quickly launch a web application using <a href="//heroku.com" target="_blank">Heroku.</a><br><br>
 
         Blank Bootstrap modularily designed to be able to grow with the organization, using PHP based components to suit a variety of purposes.<br><br>
 
@@ -276,6 +278,15 @@
         </div>
         <div class="row">
             <img src="assets/img/projects/hexagonApp.png">
+        </div>
+
+        <div class="row description">
+            <a href="//www.innovativearts.com/" target="_blank"><h4>Bluepay Forms</h4></a>
+            Created a series of custom Bluepay forms for Innovative Arts Inc., processing > $100k.<br>
+            <div class="smaller">HTML, CSS, JS</div>
+        </div>
+        <div class="row">
+            <img src="assets/img/projects/innovativeApp.png">
         </div>
 
         <div class="row description">
