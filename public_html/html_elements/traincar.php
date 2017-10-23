@@ -303,10 +303,6 @@
     <div class="backgroundLeft"></div>
     <div class="backgroundRight2"></div>
 
-    <div id="card-tooltip">
-        <i class="fa fa-close"></i>
-        You can use the up and down arrows to navigate content.
-    </div>
 
 </div>
 

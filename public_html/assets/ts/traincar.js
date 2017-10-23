@@ -1,7 +1,9 @@
 var first = true;
 var infoCar = $("#car-2");
 var NUM_CARS = 4;
+var CHANGE_LOCK = false;
 function changeTrainCar(currentCar, nextCar, direction) {
+    CHANGE_LOCK = true;
     if (currentCar == infoCar) {
         $('#card-tooltip').fadeOut(1000);
     }
@@ -58,6 +60,7 @@ function changeTrainCar(currentCar, nextCar, direction) {
     }
     setTimeout(function () {
         currentCar.removeClass('traincar-active');
+        CHANGE_LOCK = false;
     }, 750);
     if (first && nextCar == infoCar) {
         first = false;
@@ -65,21 +68,23 @@ function changeTrainCar(currentCar, nextCar, direction) {
     }
 }
 function moveCar(key) {
-    if (key == 37) {
-        // left
-        var currentCar = $('.traincar-active').first();
-        currentCar.promise().done(function () {
-            var currentPosition = parseInt(this.attr('data-car-id'));
-            changeTrainCar(this, $('#car-' + ((((currentPosition - 1) % NUM_CARS) + NUM_CARS) % NUM_CARS).toString()), 'left');
-        });
-    }
-    else if (key == 39) {
-        // right
-        var currentCar = $('.traincar-active').first();
-        currentCar.promise().done(function () {
-            var currentPosition = parseInt(this.attr('data-car-id'));
-            changeTrainCar(this, $('#car-' + ((((currentPosition + 1) % NUM_CARS) + NUM_CARS) % NUM_CARS).toString()), 'right');
-        });
+    if (!CHANGE_LOCK) {
+        if (key == 37) {
+            // left
+            var currentCar = $('.traincar-active').first();
+            currentCar.promise().done(function () {
+                var currentPosition = parseInt(this.attr('data-car-id'));
+                changeTrainCar(this, $('#car-' + ((((currentPosition - 1) % NUM_CARS) + NUM_CARS) % NUM_CARS).toString()), 'left');
+            });
+        }
+        else if (key == 39) {
+            // right
+            var currentCar = $('.traincar-active').first();
+            currentCar.promise().done(function () {
+                var currentPosition = parseInt(this.attr('data-car-id'));
+                changeTrainCar(this, $('#car-' + ((((currentPosition + 1) % NUM_CARS) + NUM_CARS) % NUM_CARS).toString()), 'right');
+            });
+        }
     }
 }
 $('body').on('keydown', function (e) {
