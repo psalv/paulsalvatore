@@ -12,3 +12,4 @@ $("#togglePlay").on("click", function () {
         state.addClass("fa-play");
     }
 });
+

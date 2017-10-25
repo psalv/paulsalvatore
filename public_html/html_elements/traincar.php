@@ -66,7 +66,7 @@
         </div>
 
         <div class="infoCardTitle" id="card-2" data-card-id="2">
-            <div class="thirdsRow row text-center">
+            <div class="halvesRow row text-center">
                 <div class="col-xs-6">
                     <div class="parentCenter">
                         <div class="childCenter">

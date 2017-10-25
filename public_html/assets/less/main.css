@@ -43,7 +43,7 @@
     display: none;
   }
 }
-@media (min-width: 660px) {
+@media (min-width: 661px) {
   .mobile {
     display: none;
   }
@@ -254,6 +254,10 @@
 #car-2 .card .infoCardTitle .thirdsRow img {
   width: 70%;
 }
+#car-2 .card .infoCardTitle .halvesRow img {
+  width: 60%;
+  padding-top: 10px;
+}
 #car-2 .card #card-0 {
   padding: auto;
 }
@@ -342,6 +346,9 @@
 }
 #car-3 i {
   cursor: pointer;
+}
+#car-3 #smokeIcon {
+  cursor: default;
 }
 #car-3 .icons {
   margin-top: 40px;
