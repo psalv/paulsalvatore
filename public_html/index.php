@@ -57,7 +57,6 @@
 
     <hr style="width: 100%; border: 1px solid">
 
-
     <div class="row">
         <div class="column col-xs-7 small1">
             <div class="parentCenter">
