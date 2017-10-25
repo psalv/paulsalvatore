@@ -19,8 +19,9 @@
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 
     <!-- Custom Fonts -->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Roboto:100,300,500,700" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Roboto:300,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Raleway:300,700" rel="stylesheet">
 
 
     <!-- Custom CSS -->
@@ -32,25 +33,56 @@
 <body>
 
 <!--=========================================== MAIN FILES ==========================================-->
-<?php
-$page = "index-page";
-$hasGmap = true;
+<div class="desktop">
+    <?php
+    $page = "index-page";
+    $hasGmap = true;
 
-include "html_elements/traincar.php";
-include "html_elements/navigation.php";
+    include "html_elements/traincar.php";
+    include "html_elements/navigation.php";
 
-?>
+    ?>
+</div>
+<div class="mobile raleway">
+
+    Hello. <br><br>
+
+    My mobile site will be here soon! <br><br>
+
+    Please visit my desktop site in the meantime. <br><br>
+
+    Thanks, <br>
+
+    Paul.<br>
+
+    <hr style="width: 100%; border: 1px solid">
 
 
-<!--
-TODO:
+    <div class="row">
+        <div class="column col-xs-7 small1">
+            <div class="parentCenter">
+                <div class="childCenter">
+                    paulanthonysalvatore@gmail.com
+                </div>
+            </div>
+        </div>
+        <div class="column col-xs-5 small2">
+            <div class="parentCenter">
+                <div class="childCenter">
+                    <div class="text-right">
+                        <a href="//linkedin.com/in/paul-salvatore"><i class="fa fa-linkedin-square"></i></a>
+                        <a href="//github.com/psalv"><i class="fa fa-github-square"></i></a>
+                        <a href="mailto:paulanthonysalvatore@gmail.com"><i class="fa fa-envelope-square"></i></a>
+                        <a href="#"><i class="fa fa-google-plus-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
--change font size for lets connect to match TC #1
--change font and style of PROJECTS
--experiment with different fonts
--set a minimum width, try to make it that when it is that width the body is scrollable
--->
 
+
+</div>
 <!--=========================================== JS SCRIPTS ==========================================-->
 <!-- jQuery -->
 <script src="assets/js/jquery.min.js" type="text/javascript"></script>

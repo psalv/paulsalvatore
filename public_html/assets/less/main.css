@@ -1,18 +1,24 @@
-.fontStyle {
-  font-family: 'Roboto', sans-serif;
+.raleway {
+  font-family: 'Raleway', sans-serif !important;
+  font-weight: 300;
+}
+.black {
+  color: black;
+}
+.roboto {
+  font-family: 'Roboto', sans-serif !important;
   font-weight: 300;
 }
 .font700 {
   font-weight: 700 !important;
 }
 * {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  overflow-x: hidden !important;
-  overflow-y: hidden !important;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 .scrollable {
   min-height: 500px !important;
+  min-width: 800px !important;
 }
 .materialShadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -31,6 +37,39 @@
   display: table-cell;
   vertical-align: middle;
   width: 100%;
+}
+@media (max-width: 660px) {
+  .desktop {
+    display: none;
+  }
+}
+@media (min-width: 660px) {
+  .mobile {
+    display: none;
+  }
+}
+/*============================================ MOBILE */
+.mobile {
+  height: 100vh !important;
+  overflow-y: scroll !important;
+  background-color: #2196F3;
+  font-size: 3em;
+  color: white;
+  font-weight: 700;
+  padding: 5%;
+}
+.mobile .column {
+  height: 40px;
+}
+.mobile a {
+  color: white !important;
+  padding-right: 7px;
+}
+.mobile .small1 {
+  font-size: 13px !important;
+}
+.mobile .small2 {
+  font-size: 25px !important;
 }
 /*============================================ NAVIGATION.PHP =====================================*/
 .navButton {
@@ -127,6 +166,7 @@
 }
 #car-1 {
   min-height: 500px !important;
+  min-width: 800px !important;
   width: 100%;
   background-color: white;
   color: #2196F3;
@@ -165,6 +205,7 @@
 }
 #car-2 {
   min-height: 500px !important;
+  min-width: 800px !important;
   width: 100%;
   background-color: white;
   color: #2196F3;
@@ -285,9 +326,13 @@
 }
 #car-3 {
   min-height: 500px !important;
+  min-width: 800px !important;
   width: 100%;
   background-color: white;
-  font-size: 5em;
+  font-size: 4em;
+}
+#car-3 .connectText {
+  font-size: 1em !important;
 }
 #car-3 .content-block {
   color: #2196F3 !important;

@@ -8,8 +8,17 @@
 
 @GREY: #757575;
 
-.fontStyle{
-  font-family: 'Roboto', sans-serif;
+.raleway{
+  font-family: 'Raleway', sans-serif !important;
+  font-weight: 300;
+}
+
+.black{
+  color: black;
+}
+
+.roboto{
+  font-family: 'Roboto', sans-serif !important;
   font-weight: 300;
 }
 
@@ -18,13 +27,13 @@
 }
 
 * {
-  .fontStyle;
-  overflow-x: hidden !important;
-  overflow-y: hidden !important;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .scrollable{
   min-height: 500px !important;
+  min-width: 800px !important;
 }
 
 .materialShadow {
@@ -49,9 +58,51 @@
   width: 100%;
 }
 
+.desktop{
+  @media (max-width: 660px){
+    display: none;
+  }
+}
+
+.mobile{
+  @media (min-width: 660px){
+    display: none;
+  }
+}
+
 *{
   //border: solid 1px red !important;
 }
+/*============================================ MOBILE */
+
+.mobile{
+  height: 100vh !important;
+  overflow-y: scroll !important;
+
+  background-color: @BLUE500;
+  font-size: 3em;
+  color: white;
+  font-weight: 700;
+  padding: 5%;
+
+  .column{
+    height: 40px;
+  }
+
+  a{
+    color: white !important;
+    padding-right: 7px;
+  }
+
+  .small1{
+    font-size: 13px !important;
+  }
+
+  .small2{
+    font-size: 25px !important;
+  }
+}
+
 
 /*============================================ NAVIGATION.PHP =====================================*/
 
@@ -337,7 +388,11 @@
 
   width: 100%;
   background-color: white;
-  font-size: 5em;
+  font-size: 4em;
+
+  .connectText{
+    font-size: 1em !important;
+  }
 
   .content-block{
     color: @BLUE500 !important;
