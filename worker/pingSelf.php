@@ -6,8 +6,7 @@
  * Time: 2:50 PM
  */
 
-// the url of your website goes here
-$sites = array('');
+$sites = array('http://paulsalvatore.io');
 $handles = array();
 
 foreach ($sites as $i => $url) {
@@ -44,4 +43,4 @@ foreach ($handles as $ch) {
 curl_multi_close($mh);
 
 // heroku logs -t
-error_log('Completed at ' . date('HEX_SIDE_LENGTH'));
+error_log('Completed at ' . date('r'));
