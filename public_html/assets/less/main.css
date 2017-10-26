@@ -346,6 +346,16 @@
 }
 #car-3 i {
   cursor: pointer;
+  padding: 15px;
+  border: 3px solid #2196F3;
+  border-radius: 25px;
+}
+@media (max-width: 1000px) {
+  #car-3 i {
+    font-size: 25px !important;
+    border: 2px solid #2196F3;
+    border-radius: 20px;
+  }
 }
 #car-3 #smokeIcon {
   cursor: default;

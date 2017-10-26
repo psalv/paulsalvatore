@@ -3,13 +3,13 @@ var smokeContainer = $('.smokeContainer');
 function placeSmoke() {
     var offset = smokeIcon.offset();
     $("#smoke1").css({
-        top: offset.top - 50,
-        left: offset.left - 10
+        top: offset.top - 25,
+        left: offset.left - 8
     }).next().css({
-        top: offset.top - 80,
+        top: offset.top - 55,
         left: offset.left + 40
     }).next().css({
-        top: offset.top - 140,
+        top: offset.top - 115,
         left: offset.left + 10
     });
 }
@@ -40,10 +40,10 @@ $('#githubIcon').on("mouseover", function () {
 $('#mailIcon').on("mouseover", function () {
     $('#currentLink').html("paulanthonysalvatore@gmail.com");
 });
-$('#googleIcon').on("mouseover", function () {
+$('#mediumIcon').on("mouseover", function () {
     $('#currentLink').html("");
 }).on('click', function () {
-    window.open("https://google.ca", '_blank');
+    window.open("https://medium.com/@paulanthonysalvatore/", '_blank');
 });
 smokeIcon.on("mouseover", function () {
     $('#currentLink').html("I am vigilantly on the lookout for smoke signals.");
