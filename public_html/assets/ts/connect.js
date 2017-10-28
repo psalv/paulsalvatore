@@ -30,12 +30,12 @@ setInterval(function () {
 $('#linkedinIcon').on("mouseover", function () {
     $('#currentLink').html("");
 }).on('click', function () {
-    window.open("https://www.linkedin.com/in/paul-salvatore/", '_blank');
+    window.open("//www.linkedin.com/in/paul-salvatore/", '_blank');
 });
 $('#githubIcon').on("mouseover", function () {
     $('#currentLink').html("");
 }).on('click', function () {
-    window.open("https://github.com/psalv", '_blank');
+    window.open("//github.com/psalv", '_blank');
 });
 $('#mailIcon').on("mouseover", function () {
     $('#currentLink').html("paulanthonysalvatore@gmail.com");
@@ -43,7 +43,7 @@ $('#mailIcon').on("mouseover", function () {
 $('#mediumIcon').on("mouseover", function () {
     $('#currentLink').html("");
 }).on('click', function () {
-    window.open("https://medium.com/@paulanthonysalvatore/", '_blank');
+    window.open("//medium.com/@paulanthonysalvatore/", '_blank');
 });
 smokeIcon.on("mouseover", function () {
     $('#currentLink').html("I am vigilantly on the lookout for smoke signals.");

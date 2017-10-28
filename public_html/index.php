@@ -102,7 +102,7 @@
                         <a href="//linkedin.com/in/paul-salvatore"><i class="fa fa-linkedin"></i></a>
                         <a href="//github.com/psalv"><i class="fa fa-github"></i></a>
                         <a href="mailto:paulanthonysalvatore@gmail.com"><i class="fa fa-envelope"></i></a>
-                        <a href="https://medium.com/@paulanthonysalvatore/"><i class="fa fa-medium"></i></a>
+                        <a href="//medium.com/@paulanthonysalvatore/"><i class="fa fa-medium"></i></a>
                     </div>
                 </div>
             </div>
