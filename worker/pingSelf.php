@@ -6,6 +6,7 @@
  * Time: 2:50 PM
  */
 
+/*
 $sites = array('http://paulsalvatore.io');
 $handles = array();
 
@@ -44,3 +45,4 @@ curl_multi_close($mh);
 
 // heroku logs -t
 error_log('Completed at ' . date('r'));
+*/
