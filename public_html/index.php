@@ -13,9 +13,9 @@
     <meta property="og:title" content="This is Paul." />
     <meta property="og:site_name" content="This is Paul." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://paulsalvatore.io" />
+    <meta property="og:url" content="http://paulsalvatore.io" />
 
-    <meta property="og:image" content="https://western.developers.foundation/assets/img/background/banner.png" />
+<!--    <meta property="og:image" content="https://western.developers.foundation/assets/img/background/banner.png" />-->
     <meta property="og:description" content="Constantly growing." />
 
     <meta property="fb:app_id" content="" />
