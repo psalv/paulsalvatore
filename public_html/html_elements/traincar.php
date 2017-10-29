@@ -271,6 +271,15 @@
         </div>
 
         <div class="row description">
+            <a href="//sometimespaulreads.herokuapp.com/" target="_blank"><h4 class="raleway font700">Sometimes Paul Reads</h4></a>
+            Some of my brief thoughts on other people's ideas.<br>
+            <div class="smaller">PHP, LESS, TS, Heroku</div>
+        </div>
+        <div class="row">
+            <img src="assets/img/projects/sometimesPaulReadsApp.png">
+        </div>
+
+        <div class="row description">
             <a href="//json-to-q.herokuapp.com/" target="_blank"><h4 class="raleway font700">JSON-to-Q</h4></a>
             Easily create q cards! Just put them into JSON format first.<br>
             <div class="smaller">HTML, CSS, JS, Heroku</div>
