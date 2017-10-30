@@ -5,6 +5,9 @@
 .black {
   color: black;
 }
+.letterSpacing {
+  letter-spacing: 6px;
+}
 .roboto {
   font-family: 'Roboto', sans-serif !important;
   font-weight: 300;
@@ -254,9 +257,15 @@
 #car-2 .card .infoCardTitle .thirdsRow img {
   width: 70%;
 }
+#car-2 .card .infoCardTitle .halvesRow {
+  height: 100% !important;
+}
 #car-2 .card .infoCardTitle .halvesRow img {
   width: 60%;
   padding-top: 10px;
+}
+#car-2 .card .infoCardTitle .halvesRow .col-xs-6 {
+  height: 100% !important;
 }
 #car-2 .card #card-0 {
   padding: auto;
