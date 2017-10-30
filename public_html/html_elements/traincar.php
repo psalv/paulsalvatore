@@ -271,7 +271,7 @@
         </div>
 
         <div class="row description">
-            <a href="//sometimespaulreads.herokuapp.com/" target="_blank"><h4 class="raleway font700">Sometimes Paul Reads</h4></a>
+            <a href="//sometimespaulreads.com/" target="_blank"><h4 class="raleway font700">Sometimes Paul Reads</h4></a>
             Some of my brief thoughts on other people's ideas.<br>
             <div class="smaller">PHP, LESS, TS, Heroku</div>
         </div>
