@@ -18,7 +18,7 @@
     <meta property="og:image" content="http://www.paulsalvatore.io/assets/img/favicon/background/banner.png" />
     <meta property="og:description" content="Constantly growing." />
 
-    <meta property="fb:app_id" content="" />
+    <meta property="fb:app_id" content="300997240388439" />
 
     <title>This is Paul.</title>
 
