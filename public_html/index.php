@@ -86,25 +86,21 @@
 
     <hr style="width: 100%; border: 1px solid">
 
-    <div class="row">
-        <div class="column col-xs-7 small1">
-            <div class="parentCenter">
-                <div class="childCenter">
-                    paulanthonysalvatore@gmail.com
-                </div>
-            </div>
+    <div class="row text-center">
+        <div class="col-xs-3">
+            <a href="//linkedin.com/in/paul-salvatore"><i class="fa fa-linkedin"></i></a>
         </div>
-        <div class="column col-xs-5 small2">
-            <div class="parentCenter">
-                <div class="childCenter">
-                    <div class="text-right">
-                        <a href="//linkedin.com/in/paul-salvatore"><i class="fa fa-linkedin"></i></a>
-                        <a href="//github.com/psalv"><i class="fa fa-github"></i></a>
-                        <a href="mailto:paulanthonysalvatore@gmail.com"><i class="fa fa-envelope"></i></a>
-                        <a href="//medium.com/@paulanthonysalvatore/"><i class="fa fa-medium"></i></a>
-                    </div>
-                </div>
-            </div>
+
+        <div class="col-xs-3">
+            <a href="//github.com/psalv"><i class="fa fa-github"></i></a>
+        </div>
+
+        <div class="col-xs-3">
+            <a href="mailto:paulanthonysalvatore@gmail.com"><i class="fa fa-envelope"></i></a>
+        </div>
+
+        <div class="col-xs-3">
+            <a href="//medium.com/@paulanthonysalvatore/"><i class="fa fa-medium"></i></a>
         </div>
     </div>
 
