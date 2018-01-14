@@ -282,6 +282,15 @@
         </div>
 
         <div class="row description">
+            <a href="//whathepedia.org" target="_blank"><h4 class="raleway font700">whathepedia.org</h4></a>
+            A test of human intuition and reasoning.<br>
+            <div class="smaller">TypeScript, LESS, PHP, Heroku</div>
+        </div>
+        <div class="row">
+            <img src="assets/img/projects/whathepedia.png">
+        </div>
+
+        <div class="row description">
             <a href="//json-to-q.herokuapp.com/" target="_blank"><h4 class="raleway font700">JSON-to-Q</h4></a>
             Easily create q cards! Just put them into JSON format first.<br>
             <div class="smaller">HTML, CSS, JS, Heroku</div>
