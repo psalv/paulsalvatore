@@ -51,21 +51,114 @@
     display: none;
   }
 }
-/*============================================ MOBILE */
+/*============================================ MOBILE  */
 .mobile {
   height: 100vh !important;
   overflow-y: scroll !important;
-  background-color: #2196F3;
+  background-color: white;
   font-size: 3em;
-  color: white;
+  color: #2196F3;
   font-weight: 700;
-  padding: 5%;
 }
 .mobile .column {
   height: 40px;
 }
 .mobile a {
+  color: #2196F3 !important;
+}
+.mobile hr {
+  margin-left: 5%;
+  margin-right: 20%;
+  width: 90%;
+  border: 1px solid;
+}
+.mobile .spaceBottom {
+  margin-bottom: 30px;
+}
+.mobile .row {
+  padding-left: 7%;
+  padding-right: 7%;
+}
+.mobile .mobileHeader {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.mobile .mobileAbout {
+  margin-bottom: 30px;
+}
+.mobile .clickableMobile {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 30px;
+  background-color: #2196F3;
+  cursor: pointer;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.mobile .clickableMobile i {
+  font-size: 12px;
+}
+.mobile .mobileWork {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 30px;
+  background-color: #2196F3;
+  cursor: pointer;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.mobile .mobileWork i {
+  font-size: 12px;
+}
+.mobile .mobileWork a {
   color: white !important;
+}
+.mobile .mobileWork a:hover {
+  text-decoration: none;
+}
+.mobile .mobileWork a:focus {
+  text-decoration: none;
+}
+.mobile .mobileWork #collapseWork {
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: 300;
+  font-size: 16px !important;
+  color: #BBDEFB;
+}
+.mobile .mobileWork #collapseWork .title {
+  font-family: 'Raleway', sans-serif !important;
+  font-weight: 300;
+  font-weight: 700 !important;
+  font-size: 20px !important;
+  color: white !important;
+}
+.mobile .mobileProjects {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 30px;
+  background-color: #2196F3;
+  cursor: pointer;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.mobile .mobileProjects i {
+  font-size: 12px;
+}
+.mobile .mobileProjects #collapseProjects {
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: 300;
+  font-size: 16px !important;
+  color: #BBDEFB;
+}
+.mobile .mobileProjects #collapseProjects a {
+  font-size: 20px !important;
+  color: white !important;
+}
+.mobile .mobileProjects #collapseProjects .smaller {
+  font-size: 10px !important;
 }
 /*============================================ NAVIGATION.PHP =====================================*/
 .navButton {
